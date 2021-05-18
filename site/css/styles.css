@@ -1,0 +1,12 @@
+/** Top Level **/
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 1.25rem;
+    max-height: 3.75rem;
+}
