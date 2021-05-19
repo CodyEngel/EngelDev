@@ -52,6 +52,11 @@ tasks.withType<Test> {
     useJUnitPlatform()
 }
 
+val compileKotlin: KotlinCompile by tasks
+compileKotlin.kotlinOptions {
+    freeCompilerArgs = listOf("-Xinline-classes")
+}
+
 application {
     mainClassName = "io.ktor.server.netty.EngineMain"
 }

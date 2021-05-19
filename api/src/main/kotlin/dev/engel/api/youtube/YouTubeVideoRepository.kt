@@ -1,33 +1,29 @@
 package dev.engel.api.youtube
 
 import com.google.cloud.Timestamp
-import com.google.cloud.datastore.*
-import dev.engel.api.internal.GoogleCloudContext
+import com.google.cloud.datastore.Datastore
+import com.google.cloud.datastore.Entity
+import com.google.cloud.datastore.Query
+import com.google.cloud.datastore.StructuredQuery
+import dev.engel.api.internal.di.DependencyGraph
 import dev.engel.api.internal.skribe.Skribe
 import io.ktor.client.*
-import io.ktor.client.engine.cio.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.json.serializer.*
 import io.ktor.client.request.*
 import io.ktor.http.*
 import kotlinx.serialization.Serializable
 import java.util.*
 
-class YouTubeVideoRepository(apiKey: String, googleCloudContext: GoogleCloudContext, private val skribe: Skribe) {
-     private val datastore: Datastore = googleCloudContext.datastore
+inline class YouTubeApiKey(val key: String) {
+    override fun toString(): String = key
+}
 
+class YouTubeVideoRepository(
+    apiKey: YouTubeApiKey = DependencyGraph.instance.youTubeApiKey,
+    private val datastore: Datastore = DependencyGraph.instance.datastore,
+    private val httpClient: HttpClient = DependencyGraph.instance.httpClient,
+    private val skribe: Skribe = DependencyGraph.instance.skribe,
+) {
     private val requestUrl = "https://www.googleapis.com/youtube/v3/search?key=$apiKey&channelId=UCXwjZTvpFiBl93ACCUh1NXQ&type=video&part=snippet&order=date"
-    private val httpClient by lazy {
-        HttpClient(CIO) {
-            install(JsonFeature) {
-                serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
-                    prettyPrint = true
-                    isLenient = true
-                    ignoreUnknownKeys = true
-                })
-            }
-        }
-    }
 
     private val fetchedAt: Date?
         get() {

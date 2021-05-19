@@ -1,6 +1,5 @@
 package dev.engel.api.youtube
 
-import dev.engel.api.internal.GoogleCloudContext
 import dev.engel.api.internal.extensions.skribe
 import io.ktor.application.*
 import io.ktor.response.*
@@ -14,8 +13,8 @@ data class YouTubeVideos(
 
 private lateinit var youTubeVideoRepository: YouTubeVideoRepository
 
-fun Application.registerYouTubeRoutes(apiKey: String, googleCloudContext: GoogleCloudContext) {
-    youTubeVideoRepository = YouTubeVideoRepository(apiKey, googleCloudContext, skribe)
+fun Application.registerYouTubeRoutes() {
+    youTubeVideoRepository = YouTubeVideoRepository()
     routing {
         youtubeRecentVideoRouting()
     }

@@ -1,12 +1,9 @@
 package dev.engel.api.marketing.email
 
+import dev.engel.api.internal.di.DependencyGraph
 import dev.engel.api.internal.extensions.skribe
 import io.ktor.application.*
-import io.ktor.client.*
-import io.ktor.client.engine.cio.*
 import io.ktor.client.features.*
-import io.ktor.client.features.json.*
-import io.ktor.client.features.json.serializer.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
@@ -19,9 +16,9 @@ import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import java.util.*
 
-fun Application.registerEmailRoutes(apiKey: String) {
+fun Application.registerEmailRoutes() {
     routing {
-        addEmailRecipientRoute(apiKey)
+        addEmailRecipientRoute()
     }
 }
 
@@ -41,22 +38,19 @@ data class RecipientRequest(
     val lastName: String,
 )
 
-fun Route.addEmailRecipientRoute(apiKey: String) {
+inline class MailchimpApiKey(val key: String) {
+    override fun toString(): String = key
+}
+
+fun Route.addEmailRecipientRoute() {
+    val apiKey = DependencyGraph.instance.mailchimpApiKey
+    val client = DependencyGraph.instance.httpClient
     route("/marketing/email/recipient") {
         post {
             application.skribe.info("POST -- Email Recipient")
 
             val recipientRequest = call.receive<RecipientRequest>()
             val requestUrl = "https://us1.api.mailchimp.com/3.0/lists/76fc4db729/members"
-            val client = HttpClient(CIO) {
-                install(JsonFeature) {
-                    serializer = KotlinxSerializer(kotlinx.serialization.json.Json {
-                        prettyPrint = true
-                        isLenient = true
-                        ignoreUnknownKeys = true
-                    })
-                }
-            }
 
             val mailchimpRequest = MailchimpMemberRequest(
                 status = "pending",
@@ -71,7 +65,7 @@ fun Route.addEmailRecipientRoute(apiKey: String) {
                 client.post<MailchimpMemberResponse>(requestUrl) {
                     accept(ContentType.Application.Json)
                     contentType(ContentType.Application.Json)
-                    header("Authorization", "Basic ${encodeAuthorizationHeader(apiKey)}")
+                    header("Authorization", "Basic ${encodeAuthorizationHeader(apiKey.key)}")
                     body = mailchimpRequest
                 }
             } catch (ex: ResponseException) {
