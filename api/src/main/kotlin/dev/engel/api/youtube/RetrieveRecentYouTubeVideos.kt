@@ -38,7 +38,6 @@ class RetrieveRecentYouTubeVideos(
     suspend fun fromCache(limit: Int): List<YouTubeVideo> = coroutineScope {
         skribe.info("RetrieveRecentYouTubeVideos#retrieveVideosFromDataStore")
         withContext(ioDispatcher) {
-            // TODO: not testable, needs facade
             val youtubeVideoQuery = Query.newEntityQueryBuilder().setKind("YouTubeVideo")
                 .setOrderBy(StructuredQuery.OrderBy.desc("publishedAt"))
                 .setLimit(limit)

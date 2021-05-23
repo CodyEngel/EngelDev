@@ -5,6 +5,7 @@ plugins {
     application
     kotlin("jvm") version "1.5.0"
     kotlin("plugin.serialization") version "1.5.0"
+    id("io.gitlab.arturbosch.detekt") version "1.17.1"
 }
 group = "dev.engel"
 version = "0.1-SNAPSHOT"
@@ -48,7 +49,8 @@ dependencies {
 
     testImplementation("io.mockk:mockk:1.11.0")
 }
-tasks.withType<KotlinCompile>() {
+
+tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "12"
 }
 

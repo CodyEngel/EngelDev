@@ -6,11 +6,6 @@ import io.ktor.response.*
 import io.ktor.routing.*
 import kotlinx.serialization.Serializable
 
-@Serializable
-data class YouTubeVideos(
-    val videos: List<YouTubeVideo>
-)
-
 private lateinit var youTubeVideoRepository: YouTubeVideoRepository
 
 fun Application.registerYouTubeRoutes() {
@@ -29,7 +24,13 @@ fun Route.youtubeRecentVideoRouting() {
     }
 }
 
+@SuppressWarnings("MagicNumber")
 private suspend fun retrieveRecentVideos(): YouTubeVideos {
     val videos = youTubeVideoRepository.retrieveVideos(21)
     return YouTubeVideos(videos)
 }
+
+@Serializable
+data class YouTubeVideos(
+    val videos: List<YouTubeVideo>
+)

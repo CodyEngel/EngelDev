@@ -16,7 +16,6 @@ class WriteRecentYouTubeVideos(
                 .setKind("YouTubeVideo")
                 .newKey(youTubeVideo.id)
 
-            // TODO: not testable, needs a facade
             Entity.newBuilder(key)
                 .set("id", youTubeVideo.id)
                 .set("title", youTubeVideo.title)
