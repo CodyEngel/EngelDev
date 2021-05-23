@@ -34,3 +34,16 @@ jobs:
           distribution: "adopt"
       - name: Run Kotlin Linter
         run: ./gradlew detekt
+
+  deploy-api:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: google-github-actions/setup-gcloud@master
+        with:
+          version: "290.0.1"
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+          service_account_key: ${{ secrets.GCP_SA_KEY }}
+          export_default_credentials: true
+      - run: gcloud info
