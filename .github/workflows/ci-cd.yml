@@ -49,6 +49,8 @@ jobs:
           export_default_credentials: true
       - name: Build API
         run: gcloud builds submit --tag gcr.io/cody-engel-landing/api api
+      - name: Deploy API
+        run: gcloud run deploy api --image gcr.io/cody-engel-landing/api
 
   deploy-site:
     runs-on: ubuntu-latest
@@ -63,4 +65,4 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
       - name: Deploy Site
-        run: gsutil cp site gs://engel.dev
+        run: gsutil rsync -R site gs://engel.dev
