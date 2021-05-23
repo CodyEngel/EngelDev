@@ -50,7 +50,7 @@ jobs:
       - name: Build API
         run: gcloud builds submit --tag gcr.io/cody-engel-landing/api api
       - name: Deploy API
-        run: gcloud run deploy api --image gcr.io/cody-engel-landing/api
+        run: gcloud run deploy api --image gcr.io/cody-engel-landing/api --platform managed --region us-central1
 
   deploy-site:
     runs-on: ubuntu-latest
