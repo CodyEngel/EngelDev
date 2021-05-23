@@ -12,8 +12,8 @@ In order to deliver dynamic content, this project includes an API layer which is
 #### Environment Variables
 To keep secrets, secret, and to enable switching between the real Google Cloud and the emulated one, there are a few environment variables to set:
 
-* MAILCHIMP_KEY=<YOUR-MAILCHIMP-API-KEY>
-* YOUTUBE_KEY=<YOUR-YOUTUBE-DATA-API-KEY>
+* MAILCHIMP_KEY=YOUR-MAILCHIMP-API-KEY
+* YOUTUBE_KEY=YOUR-YOUTUBE-DATA-API-KEY
 * KTOR_ENVIRONMENT=local OR production
 
 #### Dependencies
