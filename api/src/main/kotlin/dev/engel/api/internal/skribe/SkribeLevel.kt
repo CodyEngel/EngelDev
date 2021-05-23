@@ -1,5 +1,6 @@
 package dev.engel.api.internal.skribe
 
+@SuppressWarnings("MagicNumber")
 sealed class SkribeLevel {
     val name: String = this::class.simpleName!!
     abstract val int: Int

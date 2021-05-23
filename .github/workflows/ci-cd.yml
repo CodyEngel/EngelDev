@@ -1,0 +1,36 @@
+name: CI/CD
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 12
+        uses: actions/setup-java@v2
+        with:
+          java-version: "12"
+          distribution: "adopt"
+      - name: Run Unit Tests
+        run: ./gradlew test
+
+  linter:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 12
+        uses: actions/setup-java@v2
+        with:
+          java-version: "12"
+          distribution: "adopt"
+      - name: Run Kotlin Linter
+        run: ./gradlew detekt

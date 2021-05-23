@@ -5,6 +5,7 @@ plugins {
     application
     kotlin("jvm") version "1.5.0"
     kotlin("plugin.serialization") version "1.5.0"
+    id("io.gitlab.arturbosch.detekt") version "1.17.1"
 }
 group = "dev.engel"
 version = "0.1-SNAPSHOT"
