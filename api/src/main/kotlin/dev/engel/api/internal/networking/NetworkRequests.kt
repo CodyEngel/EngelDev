@@ -1,12 +1,21 @@
 package dev.engel.api.internal.networking
 
 import dev.engel.api.internal.di.DependencyGraph
+import dev.engel.api.internal.networking.request.MailchimpMemberRequest
+import dev.engel.api.internal.networking.response.MailchimpError
+import dev.engel.api.internal.networking.response.MailchimpMemberResponse
+import dev.engel.api.internal.networking.response.YouTubeSearchResult
 import dev.engel.api.internal.skribe.Skribe
+import dev.engel.api.marketing.email.MailchimpApiKey
 import dev.engel.api.youtube.YouTubeApiKey
 import io.ktor.client.*
+import io.ktor.client.features.*
 import io.ktor.client.request.*
+import io.ktor.client.statement.*
 import io.ktor.http.*
-import kotlinx.serialization.Serializable
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
+import java.util.*
 
 class NetworkRequests(
     private val httpClient: HttpClient = DependencyGraph.instance.httpClient,
@@ -27,46 +36,28 @@ class NetworkRequests(
             accept(ContentType.Application.Json)
         }.also { skribe.info("recentVideos: $it") }
     }
+
+    suspend fun postMailchimpMember(apiKey: MailchimpApiKey, mailchimpRequest: MailchimpMemberRequest): Pair<MailchimpMemberResponse?, MailchimpError?> {
+        fun encodeAuthorizationHeader(apiKey: String): String {
+            return Base64.getEncoder().encodeToString("user:$apiKey".toByteArray())
+        }
+
+        val requestUrl = "https://us1.api.mailchimp.com/3.0/lists/76fc4db729/members"
+
+        return try {
+            val response = httpClient.post<MailchimpMemberResponse>(requestUrl) {
+                accept(ContentType.Application.Json)
+                contentType(ContentType.Application.Json)
+                header("Authorization", "Basic ${encodeAuthorizationHeader(apiKey.key)}")
+                body = mailchimpRequest
+            }
+            Pair(response, null)
+        } catch (ex: ResponseException) {
+            val text = ex.response.readText()
+            skribe.error("ResponseError -- $text")
+            val mailchimpError = Json { ignoreUnknownKeys = true }
+                .decodeFromString<MailchimpError>(text)
+            Pair(null, mailchimpError)
+        }.also { skribe.info("postMailchimpMember: $it") }
+    }
 }
-
-@Serializable
-data class YouTubeSearchResult(
-    val etag: String,
-    val nextPageToken: String,
-    val pageInfo: PageInfo,
-    val items: List<YouTubeSearchResultItem>
-)
-
-@Serializable
-data class YouTubeSearchResultItem(
-    val etag: String,
-    val id: YouTubeId,
-    val snippet: YouTubeSearchSnippet
-)
-
-@Serializable
-data class YouTubeSearchSnippet(
-    val title: String,
-    val description: String,
-    val publishedAt: String,
-    val thumbnails: Map<String, YouTubeThumbnail>
-)
-
-@Serializable
-data class YouTubeThumbnail(
-    val url: String,
-    val width: Int,
-    val height: Int
-)
-
-@Serializable
-data class YouTubeId(
-    val kind: String,
-    val videoId: String
-)
-
-@Serializable
-data class PageInfo(
-    val totalResults: Int,
-    val resultsPerPage: Int
-)

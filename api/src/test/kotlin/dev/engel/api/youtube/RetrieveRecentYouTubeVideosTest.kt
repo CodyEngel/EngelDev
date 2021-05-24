@@ -1,7 +1,8 @@
 package dev.engel.api.youtube
 
 import com.google.cloud.datastore.Datastore
-import dev.engel.api.internal.networking.*
+import dev.engel.api.internal.networking.NetworkRequests
+import dev.engel.api.internal.networking.response.*
 import dev.engel.api.internal.skribe.Skribe
 import dev.engel.api.testcommons.random.generateRandomInt
 import dev.engel.api.testcommons.random.generateRandomList
