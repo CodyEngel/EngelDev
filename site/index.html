@@ -41,11 +41,12 @@
 
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="https://medium.com/@CodyEngel" target="_blank" class="nav-link">Blog</a>
+                <li class="nav-item"><a href="https://medium.com/@CodyEngel" target="_blank" rel="noopener"
+                        class="nav-link">Blog</a>
                 </li>
-                <li class="nav-item"><a href="https://unsplash.com/@codyengel" target="_blank"
+                <li class="nav-item"><a href="https://unsplash.com/@codyengel" target="_blank" rel="noopener"
                         class="nav-link">Photos</a></li>
-                <li class="nav-item"><a href="https://www.youtube.com/c/CodyEngelTalks" target="_blank"
+                <li class="nav-item"><a href="https://www.youtube.com/c/CodyEngelTalks" target="_blank" rel="noopener"
                         class="nav-link">Videos</a></li>
             </ul>
         </header>
@@ -61,14 +62,17 @@
                 industry in general.
             </p>
             <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <a href="http://youtube.com/c/CodyEngelTalks" target="_blank"><i class="bi-youtube"
+                <a href="http://youtube.com/c/CodyEngelTalks" target="_blank" rel="noopener"><i
+                        aria-label="Cody's YouTube Channel" class="bi-youtube"
                         style="font-size: 2rem; color:#FF0000;"></i></a>
-                <a href="https://github.com/CodyEngel" target="_blank"><i class="bi-github"
+                <a href="https://github.com/CodyEngel" target="_blank" rel="noopener"><i
+                        aria-label="Cody's GitHub Repository" class="bi-github"
                         style="font-size: 2rem; color: #171515;"></i></a>
-                <a href="http://linkedin.com/in/CodyEngel" target="_blank"><i class="bi-linkedin"
+                <a href="http://linkedin.com/in/CodyEngel" target="_blank" rel="noopener"><i
+                        aria-label="Cody's LinkedIn Profile" class="bi-linkedin"
                         style="font-size: 2rem; color: #0072b1;"></i></a>
-                <a href="http://twitter.com/CodyEngelTweets" target="_blank"><i class="bi-twitter"
-                        style="font-size: 2rem; color: #1DA1F2;"></i></a>
+                <a href="http://twitter.com/CodyEngelTweets" target="_blank" rel="noopener"><i
+                        aria-label="Cody's Twitter" class="bi-twitter" style="font-size: 2rem; color: #1DA1F2;"></i></a>
             </div>
         </div>
     </div>
@@ -131,11 +135,12 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col-sm-4" v-for="video in videos">
                     <div class="card">
-                        <img v-bind:src="video.thumbnail" class="card-img-top" />
+                        <img v-bind:src="video.thumbnail" v-bind:alt="video.description" class="card-img-top" />
                         <div class="card-body">
-                            <h5 class="card-title">
-                                {{ video.title }}</h5>
-                            <a v-bind:href=" video.url" target="_blank" class="btn btn-primary">Watch on YouTube</a>
+                            <h2 class="card-title">
+                                {{ video.title }}</h2>
+                            <a v-bind:href="video.url" target="_blank" rel="noopener" class="btn btn-primary">Watch on
+                                YouTube</a>
                         </div>
                     </div>
                 </div>
