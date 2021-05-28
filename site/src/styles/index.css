@@ -10,3 +10,9 @@ body {
     line-height: 1.25rem;
     max-height: 3.75rem;
 }
+
+/** 248 x 309 **/
+.card-image {
+    height: 169px;
+    width: 300px;
+}

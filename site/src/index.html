@@ -8,7 +8,7 @@
     <meta name="description" content="This is the premier destination for everything related to Cody Engel.">
     <meta name="author" content="SitePoint">
 
-    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="styles/index.css?v=1.0">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,7 +54,7 @@
 
     <!-- About Me -->
     <div class="p-4 mb-4 text-center">
-        <img class="d-block mx-auto mb-4 rounded-circle" src="images/headshot.jpg" alt="" width="175" height="175">
+        <img class="d-block mx-auto mb-4 rounded-circle" src="assets/headshot.jpg" alt="" width="175" height="175">
         <h1 class="display-5 fw-bold">Who Am I</h1>
         <div class="col-lg-6 mx-auto">
             <p class="lead mb-4">What's up everyone, my name is Cody Engel and I'm a Staff Software Engineer at PayPal.
@@ -123,7 +123,7 @@
     <div id="recentYouTubeVideos" class="px-4 pb-5 mb-5 text-center">
         <i class="bi-youtube" style="font-size: 175px; color:#FF0000;"></i>
         <h1 class="display-5 fw-bold">Latest Videos</h1>
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-8 mx-auto">
             <p class="lead col-lg-8 mb-4 pb-4 pt-2 mx-auto">I love sharing what I learn with others. This is one of the
                 reasons
                 why I
@@ -135,7 +135,8 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col-sm-4" v-for="video in videos">
                     <div class="card">
-                        <img v-bind:src="video.thumbnail" v-bind:alt="video.description" class="card-img-top" />
+                        <img v-bind:src="video.thumbnail" v-bind:alt="video.description"
+                            class="card-img-top card-image" />
                         <div class="card-body">
                             <h2 class="card-title">
                                 {{ video.title }}</h2>
@@ -147,8 +148,6 @@
             </div>
         </div>
     </div>
-
-    <script src="index.js"></script>
 </body>
 
 </html>
