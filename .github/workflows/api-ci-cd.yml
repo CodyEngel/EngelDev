@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - api/**
+      - .github/workflows/api-ci-cd.yml
 
 jobs:
   test:
