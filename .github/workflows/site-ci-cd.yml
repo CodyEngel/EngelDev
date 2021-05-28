@@ -55,8 +55,6 @@ jobs:
             ${{ runner.OS }}-
       - name: Install Dependencies
         run: npm ci
-      - name: Verify contents
-        run: ls -la
       - name: Build
         run: npm run build
       - name: Verify contents
@@ -68,4 +66,4 @@ jobs:
           service_account_key: ${{ secrets.GCP_SA_KEY }}
           export_default_credentials: true
       - name: Deploy Site
-        run: gsutil rsync -R /dist gs://engel.dev
+        run: gsutil rsync -R dist gs://engel.dev
