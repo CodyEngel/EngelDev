@@ -1,4 +1,7 @@
-var recentYouTubeVideos = new Vue({
+import Vue from 'vue/dist/vue.js'; // required for runtimeCompile: https://stackoverflow.com/a/66974990/2168085
+import axios from 'axios';
+
+new Vue({
     el: '#recentYouTubeVideos',
     data() {
         return {
@@ -22,7 +25,7 @@ var recentYouTubeVideos = new Vue({
     }
 });
 
-var emailForm = new Vue({
+new Vue({
     el: "#emailForm",
     data() {
         return {

@@ -3,14 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
     entry: {
         index: './src/index.js'
-    },
-    devtool: 'inline-source-map', // not great for production
-    devServer: {
-        contentBase: './dist',
-        port: 8081,
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -37,6 +31,7 @@ module.exports = {
     optimization: {
         moduleIds: 'deterministic',
         runtimeChunk: 'single',
+        usedExports: true,
         splitChunks: {
             cacheGroups: {
                 vendor: {

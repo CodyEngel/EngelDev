@@ -4,19 +4,25 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack serve --open",
-    "build": "webpack"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "dev-build": "webpack --config webpack.dev.js"
   },
   "devDependencies": {
     "css-loader": "^5.2.6",
     "filemanager-webpack-plugin": "^5.0.0",
     "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
+    "vue-loader": "^15.9.7",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^5.37.1",
     "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21",
+    "vue": "^2.6.12"
   }
 }
