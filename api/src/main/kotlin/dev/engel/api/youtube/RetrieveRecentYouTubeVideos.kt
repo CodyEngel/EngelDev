@@ -30,7 +30,7 @@ class RetrieveRecentYouTubeVideos(
                 title = snippet.title,
                 description = snippet.description,
                 publishedAt = snippet.publishedAt,
-                thumbnail = snippet.thumbnails.getValue("medium").url
+                thumbnail = "https://img.youtube.com/vi/${youTubeSearchResultItem.id.videoId}/maxresdefault.jpg"
             )
         }.also { skribe.info("youTubeVideos: $it") }
     }

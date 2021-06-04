@@ -37,7 +37,7 @@ internal class RetrieveRecentYouTubeVideosTest {
         val expectedTitle = generateRandomString()
         val expectedDescription = generateRandomString()
         val expectedPublishedAt = generateRandomString()
-        val expectedThumbnailUrl = generateRandomString()
+        val expectedThumbnailUrl = "https://img.youtube.com/vi/$expectedId/maxresdefault.jpg"
 
         val searchResultItems = listOf(
             createYouTubeSearchResultItem(
@@ -45,7 +45,6 @@ internal class RetrieveRecentYouTubeVideosTest {
                 expectedTitle = expectedTitle,
                 expectedDescription = expectedDescription,
                 expectedPublishedAt = expectedPublishedAt,
-                expectedThumbnailUrl = expectedThumbnailUrl
             )
         )
         coEvery {
@@ -93,7 +92,6 @@ internal class RetrieveRecentYouTubeVideosTest {
         expectedTitle: String = generateRandomString(),
         expectedDescription: String = generateRandomString(),
         expectedPublishedAt: String = generateRandomString(),
-        expectedThumbnailUrl: String = generateRandomString(),
     ): YouTubeSearchResultItem {
         return YouTubeSearchResultItem(
             etag = generateRandomString(),
@@ -105,13 +103,7 @@ internal class RetrieveRecentYouTubeVideosTest {
                 title = expectedTitle,
                 description = expectedDescription,
                 publishedAt = expectedPublishedAt,
-                thumbnails = mapOf(
-                    "medium" to YouTubeThumbnail(
-                        url = expectedThumbnailUrl,
-                        width = 270,
-                        height = 270
-                    )
-                )
+                thumbnails = emptyMap()
             )
         )
     }
