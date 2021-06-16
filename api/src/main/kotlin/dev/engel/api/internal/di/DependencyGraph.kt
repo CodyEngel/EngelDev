@@ -6,6 +6,8 @@ import dev.engel.api.internal.skribe.Skribe
 import dev.engel.api.marketing.email.MailchimpApiKey
 import dev.engel.api.youtube.YouTubeApiKey
 import io.ktor.client.*
+import io.opencensus.trace.Tracer
+import io.opencensus.trace.Tracing
 
 class DependencyGraph(
     val youTubeApiKey: YouTubeApiKey,
@@ -13,6 +15,7 @@ class DependencyGraph(
     val googleCloudContext: GoogleCloudContext,
     val httpClient: HttpClient,
     val skribe: Skribe,
+    val tracer: Tracer = Tracing.getTracer(),
 ) {
     val datastore: Datastore = googleCloudContext.datastore
 

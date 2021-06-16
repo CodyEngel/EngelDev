@@ -13,18 +13,21 @@ import io.ktor.client.features.*
 import io.ktor.client.request.*
 import io.ktor.client.statement.*
 import io.ktor.http.*
+import io.opencensus.trace.Tracer
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
 import java.util.*
 
 class NetworkRequests(
     private val httpClient: HttpClient = DependencyGraph.instance.httpClient,
-    private val skribe: Skribe = DependencyGraph.instance.skribe
+    private val skribe: Skribe = DependencyGraph.instance.skribe,
+    private val tracer: Tracer = DependencyGraph.instance.tracer,
 ) {
     suspend fun getRecentVideos(apiKey: YouTubeApiKey, limit: Int): YouTubeSearchResult {
         skribe.info("NetworkRequests#getRecentVideos")
-
-        val requestUrl = "https://www.googleapis.com/youtube/v3/search" +
+        return try {
+            tracer.spanBuilder("GetRecentVideos")
+            val requestUrl = "https://www.googleapis.com/youtube/v3/search" +
                 "?key=$apiKey" +
                 "&channelId=UCXwjZTvpFiBl93ACCUh1NXQ" +
                 "&type=video" +
@@ -32,9 +35,12 @@ class NetworkRequests(
                 "&order=date" +
                 "&maxResults=$limit"
 
-        return httpClient.get<YouTubeSearchResult>(requestUrl) {
-            accept(ContentType.Application.Json)
-        }.also { skribe.info("recentVideos: $it") }
+            httpClient.get<YouTubeSearchResult>(requestUrl) {
+                accept(ContentType.Application.Json)
+            }.also { skribe.info("recentVideos: $it") }
+        } finally {
+        	tracer.currentSpan.end()
+        }
     }
 
     suspend fun postMailchimpMember(apiKey: MailchimpApiKey, mailchimpRequest: MailchimpMemberRequest): Pair<MailchimpMemberResponse?, MailchimpError?> {

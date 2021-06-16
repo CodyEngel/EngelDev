@@ -35,6 +35,12 @@ dependencies {
     implementation(platform("com.google.cloud:libraries-bom:20.1.0"))
     implementation("com.google.cloud:google-cloud-datastore")
 
+    // Tracing
+    val openCensusVersion = "0.28.3"
+    implementation("io.opencensus:opencensus-api:$openCensusVersion")
+    implementation("io.opencensus:opencensus-exporter-trace-stackdriver:$openCensusVersion")
+    runtimeOnly("io.opencensus:opencensus-impl:$openCensusVersion")
+
     testImplementation(kotlin("test-junit5"))
     testImplementation("org.junit.jupiter:junit-jupiter:5.6.0")
 

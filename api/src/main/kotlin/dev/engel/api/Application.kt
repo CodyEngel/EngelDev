@@ -14,12 +14,26 @@ import io.ktor.client.features.json.*
 import io.ktor.client.features.json.serializer.*
 import io.ktor.features.*
 import io.ktor.serialization.*
+import io.opencensus.exporter.trace.stackdriver.StackdriverTraceConfiguration
+import io.opencensus.exporter.trace.stackdriver.StackdriverTraceExporter
+import io.opencensus.trace.Tracing
+import io.opencensus.trace.samplers.Samplers
 import org.slf4j.Logger
 import org.slf4j.event.Level
 
 fun main(args: Array<String>): Unit = io.ktor.server.netty.EngineMain.main(args)
 
 fun Application.main() {
+    if (environment.applicationEnvironment == ApplicationEnvironment.PRODUCTION) {
+        StackdriverTraceExporter.createAndRegister(StackdriverTraceConfiguration.builder().build())
+        Tracing.getTraceConfig().run {
+            updateActiveTraceParams(
+                activeTraceParams.toBuilder()
+                    .setSampler(Samplers.alwaysSample())
+                    .build()
+            )
+        }
+    }
     install(CallLogging) {
         level = environment.callLoggingLevel
     }

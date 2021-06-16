@@ -29,3 +29,4 @@ Building and running the project is as simple as clicking the run button in Inte
 1. Build the API ktor application: `./gradlew installDist`
 2. Build the Docker container: `docker build . -t api`
 3. Run the Docker container: `docker run -p 8080:8080 api`
+4. Send code to Google Cloud Build: `gcloud builds submit --tag gcr.io/YOUR-PROJECT-HERE/api .`
