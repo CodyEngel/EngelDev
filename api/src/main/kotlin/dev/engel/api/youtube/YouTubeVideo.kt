@@ -1,6 +1,7 @@
 package dev.engel.api.youtube
 
 import dev.engel.api.internal.extensions.skribe
+import dev.engel.api.internal.extensions.tracer
 import io.ktor.application.*
 import io.ktor.response.*
 import io.ktor.routing.*
@@ -19,7 +20,13 @@ fun Route.youtubeRecentVideoRouting() {
     route("/youtube/recentVideos") {
         get {
             application.skribe.info("GET -- YouTube Recent Videos")
-            call.respond(retrieveRecentVideos())
+            val tracer = application.tracer
+            try {
+                tracer.spanBuilder("GET /youtube/recentVideos").startScopedSpan()
+                call.respond(retrieveRecentVideos())
+            } finally {
+            	tracer.currentSpan.end()
+            }
         }
     }
 }
