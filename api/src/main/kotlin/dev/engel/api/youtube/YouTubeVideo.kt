@@ -10,34 +10,31 @@ import kotlinx.serialization.Serializable
 private lateinit var youTubeVideoRepository: YouTubeVideoRepository
 
 fun Application.registerYouTubeRoutes() {
-    youTubeVideoRepository = YouTubeVideoRepository()
-    routing {
-        youtubeRecentVideoRouting()
-    }
+	youTubeVideoRepository = YouTubeVideoRepository()
+	routing {
+		youtubeRecentVideoRouting()
+	}
 }
 
 fun Route.youtubeRecentVideoRouting() {
-    route("/youtube/recentVideos") {
-        get {
-            application.skribe.info("GET -- YouTube Recent Videos")
-            val tracer = application.tracer
-            try {
-                tracer.spanBuilder("GET /youtube/recentVideos").startScopedSpan()
-                call.respond(retrieveRecentVideos())
-            } finally {
-            	tracer.currentSpan.end()
-            }
-        }
-    }
+	route("/youtube/recentVideos") {
+		get {
+			application.skribe.info("GET -- YouTube Recent Videos")
+			val tracer = application.tracer
+			tracer.spanBuilder("GET /youtube/recentVideos").startScopedSpan().use {
+				call.respond(retrieveRecentVideos())
+			}
+		}
+	}
 }
 
 @SuppressWarnings("MagicNumber")
 private suspend fun retrieveRecentVideos(): YouTubeVideos {
-    val videos = youTubeVideoRepository.retrieveVideos(21)
-    return YouTubeVideos(videos)
+	val videos = youTubeVideoRepository.retrieveVideos(21)
+	return YouTubeVideos(videos)
 }
 
 @Serializable
 data class YouTubeVideos(
-    val videos: List<YouTubeVideo>
+	val videos: List<YouTubeVideo>,
 )
