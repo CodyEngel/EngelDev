@@ -42,8 +42,8 @@ jobs:
           distribution: "microsoft"
       - name: Run Kotlin Linter
         uses: gradle/gradle-build-action@v2
-          with:
-            arguments: detekt --scan
+        with:
+          arguments: detekt --scan
 
   deploy:
     runs-on: ubuntu-latest
