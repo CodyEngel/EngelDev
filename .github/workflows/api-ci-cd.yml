@@ -20,11 +20,9 @@ jobs:
         with:
           java-version: "17"
           distribution: "microsoft"
+          cache: gradle
       - name: Run Unit Tests
-        uses: gradle/gradle-build-action@v2
-        with:
-          arguments: test --scan
-          gradle-executable: /api/gradle/wrapper/gradle-wrapper.properties
+        run: ./gradlew test --no-daemon
       - name: Publishing Unit Test Results
         uses: mikepenz/action-junit-report@v2
         if: always()
@@ -41,11 +39,9 @@ jobs:
         with:
           java-version: "17"
           distribution: "microsoft"
+          cache: gradle
       - name: Run Kotlin Linter
-        uses: gradle/gradle-build-action@v2
-        with:
-          arguments: detekt --scan
-          gradle-executable: /api/gradle/wrapper/gradle-wrapper.properties
+        run: ./gradlew detekt --no-daemon
 
   deploy:
     runs-on: ubuntu-latest
