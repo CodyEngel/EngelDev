@@ -24,7 +24,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: test --scan
-          gradle-executable: /api/gradle/wrapper
+          gradle-executable: /api/gradle/wrapper/gradle-wrapper.properties
       - name: Publishing Unit Test Results
         uses: mikepenz/action-junit-report@v2
         if: always()
@@ -45,7 +45,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: detekt --scan
-          gradle-executable: /api/gradle/wrapper
+          gradle-executable: /api/gradle/wrapper/gradle-wrapper.properties
 
   deploy:
     runs-on: ubuntu-latest
