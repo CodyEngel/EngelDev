@@ -1,10 +1,10 @@
-FROM gradle:jdk12 as builder
+FROM gradle:jdk17 as builder
 
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 RUN ./gradlew installDist
 
-FROM openjdk:12-jdk
+FROM openjdk:17
 
 EXPOSE 8080:8080
 COPY --from=builder /home/gradle/src/build/install/api/ /app/
