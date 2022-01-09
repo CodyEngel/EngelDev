@@ -15,26 +15,35 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK 12
+      - name: Set up JDK 17
         uses: actions/setup-java@v2
         with:
-          java-version: "12"
-          distribution: "adopt"
+          java-version: "17"
+          distribution: "microsoft"
       - name: Run Unit Tests
-        run: ./gradlew test
+        uses: gradle/gradle-build-action@v2
+        with:
+          arguments: test --scan
+      - name: Publishing Unit Test Results
+        uses: mikepenz/action-junit-report@v2
+        if: always()
+        with:
+          report_paths: '**/build/test-results/test/TEST-*.xml'
 
   linter:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
-      - name: Set up JDK 12
+      - name: Set up JDK 17
         uses: actions/setup-java@v2
         with:
-          java-version: "12"
-          distribution: "adopt"
+          java-version: "17"
+          distribution: "microsoft"
       - name: Run Kotlin Linter
-        run: ./gradlew detekt
+        uses: gradle/gradle-build-action@v2
+          with:
+            arguments: detekt --scan
 
   deploy:
     runs-on: ubuntu-latest
