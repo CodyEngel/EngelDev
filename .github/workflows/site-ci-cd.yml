@@ -59,7 +59,7 @@ jobs:
         run: npm run build
       - name: Verify contents
         run: ls -la
-      - uses: google-github-actions/setup-gcloud@master
+      - uses: google-github-actions/setup-gcloud@v2
         with:
           version: "290.0.1"
           project_id: ${{ secrets.GCP_PROJECT_ID }}
