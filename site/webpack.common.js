@@ -4,12 +4,27 @@ const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = {
     entry: {
-        index: './src/index.js'
+        index: './src/index.js',
+        support: './src/support.js',
+        privacypolicy: './src/privacy-policy.js'
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html',
+            chunks: ['index'],
             filename: 'index.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/support.html',
+            chunks: ['support'],
+            filename: 'support.html',
+            inject: 'body'
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/privacy-policy.html',
+            chunks: ['privacypolicy'],
+            filename: 'privacy-policy.html',
             inject: 'body'
         }),
         new FileManagerPlugin({
