@@ -9,3 +9,13 @@ I am in the process of rebuilding this website to serve me better. This will be 
 and once complete it will be hosted on Digital Ocean. The previous version of this website served me well but given that
 I no longer make videos on YouTube and have started focusing more on photography, writing, and other hobbies, it is time
 to rebuild this website.
+
+## Project Organization
+
+```
+engel.dev/
+├── apps/
+│   └── web/        ← 11ty static site
+├── packages/
+└── package.json
+```
