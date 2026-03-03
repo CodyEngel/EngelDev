@@ -1,32 +1,11 @@
-# EngelDev
-This is the code that powers engel.dev
+# engel.dev
 
-## Project Setup
+Oh hey, you found my website! Well, you found the source code anyway, if you haven't already checked out my website at
+[engel.dev](https://engel.dev) you should. Actually, let me know if you found this on GitHub before you found my website.
 
-### Front End
-The front end is comprised of HTML, CSS, and JavaScript. Simply open `index.html` in a web browser and you are good to go.
+## Pardon My Dust
 
-### API
-In order to deliver dynamic content, this project includes an API layer which is built using Kotin + ktor. For the best experience, download and install IntelliJ IDEA if you haven't done so already.
-
-#### Environment Variables
-To keep secrets, secret, and to enable switching between the real Google Cloud and the emulated one, there are a few environment variables to set:
-
-* MAILCHIMP_KEY=YOUR-MAILCHIMP-API-KEY
-* YOUTUBE_KEY=YOUR-YOUTUBE-DATA-API-KEY
-* KTOR_ENVIRONMENT=local OR production
-
-#### Dependencies
-In order to run this project locally you will want to make use of Google Cloud Emulators. More specifically this project uses Google Cloud Datastore to cache YouTube information so you will want to follow the instructions for installing and running the [Datastore Emulator](https://cloud.google.com/datastore/docs/tools/datastore-emulator).
-
-Once you have the emulator set-up, you can run the following command to start the emulator: `gcloud beta emulators datastore start --no-store-on-disk`
-
-**Note:** the `no-store-on-disk` flag is used to avoid storing unnecessary data between development cycles.
-
-## Building The Project
-Building and running the project is as simple as clicking the run button in IntelliJ IDEA and refreshing the `index.html` page in your web browser. Moving towards production builds and executing the build without IntelliJ IDEA running involves a couple extra steps.
-
-1. Build the API ktor application: `./gradlew installDist`
-2. Build the Docker container: `docker build . -t api`
-3. Run the Docker container: `docker run -p 8080:8080 api`
-4. Send code to Google Cloud Build: `gcloud builds submit --tag gcr.io/YOUR-PROJECT-HERE/api .`
+I am in the process of rebuilding this website to serve me better. This will be making use of 11ty for it's simplicity
+and once complete it will be hosted on Digital Ocean. The previous version of this website served me well but given that
+I no longer make videos on YouTube and have started focusing more on photography, writing, and other hobbies, it is time
+to rebuild this website.
