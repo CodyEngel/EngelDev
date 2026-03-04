@@ -6,7 +6,7 @@ permalink: /about/
 
 ## About Me
 
-I'm a software engineer, photographer, and collector of hobbies. I enjoy building things for the web and exploring new technologies.
+I'm a software engineer, photographer, and collector of hobbies. Stay tuned for more.
 
 ## What I Do
 

@@ -334,7 +334,8 @@
 .page-header,
 .post-header,
 .project-header {
-  margin-block-end: var(--space-xl);
+  margin-block-end: var(--space-md);
+  margin-block-start: var(--space-md);
 }
 
 .page-header h1,
