@@ -1,0 +1,32 @@
+---
+layout: base.liquid
+tags: []
+eleventyExcludeFromCollections: true
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - posts
+    - projects
+    - featuredProjects
+    - tagList
+    - post
+    - project
+    - page
+permalink: "/blog/tags/{{ tag | slugify }}/"
+eleventyComputed:
+  title: "Posts tagged '{{ tag }}'"
+---
+<div class="container">
+  <header class="page-header">
+    <h1>Posts tagged "{{ tag }}"</h1>
+  </header>
+  <div class="stack">
+    {% for post in collections[tag] %}
+      {% render "partials/post-card.liquid", post: post %}
+    {% endfor %}
+  </div>
+  <p class="view-all"><a href="/blog/">&larr; All posts</a></p>
+</div>

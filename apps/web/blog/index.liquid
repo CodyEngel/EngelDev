@@ -1,0 +1,17 @@
+---
+layout: base.liquid
+title: Blog
+tags: []
+eleventyExcludeFromCollections: true
+permalink: /blog/
+---
+<div class="container">
+  <header class="page-header">
+    <h1>Blog</h1>
+  </header>
+  <div class="stack">
+    {% for post in collections.posts %}
+      {% render "partials/post-card.liquid", post: post %}
+    {% endfor %}
+  </div>
+</div>

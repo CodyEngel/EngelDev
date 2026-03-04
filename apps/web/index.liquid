@@ -1,0 +1,25 @@
+---
+layout: base.liquid
+title: Home
+---
+{% render "partials/hero.liquid", site: site %}
+
+<section class="container">
+  <h2 class="section-heading">Projects</h2>
+  <div class="grid">
+    {% for project in collections.featuredProjects %}
+      {% render "partials/project-card.liquid", project: project %}
+    {% endfor %}
+  </div>
+  <p class="view-all"><a href="/projects/">View all projects &rarr;</a></p>
+</section>
+
+<section class="container">
+  <h2 class="section-heading">Recent Posts</h2>
+  <div class="stack">
+    {% for post in collections.posts limit: 3 %}
+      {% render "partials/post-card.liquid", post: post %}
+    {% endfor %}
+  </div>
+  <p class="view-all"><a href="/blog/">View all posts &rarr;</a></p>
+</section>

@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container site-header-inner">
+    <a href="/" class="site-logo">{{ site.name }}</a>
+    <button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Menu">
+      <span class="hamburger"></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+      <ul class="nav-list" role="list">
+        {% for item in navigation %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle-icon"></span>
+      </button>
+    </nav>
+  </div>
+</header>

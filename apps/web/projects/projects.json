@@ -1,0 +1,5 @@
+{
+  "layout": "layouts/project.liquid",
+  "tags": ["project"],
+  "permalink": "/projects/{{ page.fileSlug }}/"
+}

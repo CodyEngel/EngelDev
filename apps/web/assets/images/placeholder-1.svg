@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#3d5a80"/>
+  <rect x="20" y="20" width="760" height="460" rx="12" fill="none" stroke="#7ba0cc" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="400" y="230" text-anchor="middle" font-family="system-ui, sans-serif" font-size="28" font-weight="600" fill="#e4e4e8">Project One</text>
+  <text x="400" y="275" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#a0a0b0">Replace with your image</text>
+</svg>

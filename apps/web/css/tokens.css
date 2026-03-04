@@ -1,0 +1,94 @@
+/* Design Tokens */
+
+:root {
+  /* Colors - Light (warm neutral) */
+  --color-bg: #f5f3ef;
+  --color-bg-secondary: #eae7e1;
+  --color-surface: #ffffff;
+  --color-text: #2c2c2c;
+  --color-text-secondary: #636363;
+  --color-accent: #3d5a80;
+  --color-accent-hover: #2c4466;
+  --color-border: #d4d0c8;
+  --color-code-bg: #eae7e1;
+
+  /* Typography */
+  --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', 'Fira Code', monospace;
+
+  --font-size-sm: clamp(0.83rem, 0.17vw + 0.78rem, 0.94rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.2rem, 0.58vw + 1.06rem, 1.5rem);
+  --font-size-lg: clamp(1.44rem, 0.92vw + 1.23rem, 1.88rem);
+  --font-size-xl: clamp(1.73rem, 1.4vw + 1.43rem, 2.34rem);
+  --font-size-2xl: clamp(2.07rem, 2.07vw + 1.66rem, 2.93rem);
+  --font-size-3xl: clamp(2.49rem, 3vw + 1.94rem, 3.66rem);
+
+  --line-height: 1.7;
+  --line-height-heading: 1.2;
+  --letter-spacing-tight: -0.02em;
+
+  /* Spacing */
+  --space-3xs: clamp(0.25rem, 0.1vw + 0.22rem, 0.31rem);
+  --space-2xs: clamp(0.5rem, 0.15vw + 0.46rem, 0.63rem);
+  --space-xs: clamp(0.75rem, 0.25vw + 0.68rem, 0.94rem);
+  --space-sm: clamp(1rem, 0.34vw + 0.91rem, 1.25rem);
+  --space-md: clamp(1.5rem, 0.52vw + 1.37rem, 1.88rem);
+  --space-lg: clamp(2rem, 0.69vw + 1.82rem, 2.5rem);
+  --space-xl: clamp(3rem, 1.04vw + 2.73rem, 3.75rem);
+  --space-2xl: clamp(4rem, 1.39vw + 3.64rem, 5rem);
+  --space-3xl: clamp(6rem, 2.08vw + 5.45rem, 7.5rem);
+
+  /* Layout */
+  --container-max: 1140px;
+  --container-narrow: 740px;
+  --container-padding: var(--space-md);
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+
+  /* Borders */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04);
+}
+
+[data-theme="dark"] {
+  --color-bg: #1a1a2e;
+  --color-bg-secondary: #222240;
+  --color-surface: #2a2a4a;
+  --color-text: #e4e4e8;
+  --color-text-secondary: #a0a0b0;
+  --color-accent: #7ba0cc;
+  --color-accent-hover: #9bb8d8;
+  --color-border: #3a3a5a;
+  --color-code-bg: #222240;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg: #1a1a2e;
+    --color-bg-secondary: #222240;
+    --color-surface: #2a2a4a;
+    --color-text: #e4e4e8;
+    --color-text-secondary: #a0a0b0;
+    --color-accent: #7ba0cc;
+    --color-accent-hover: #9bb8d8;
+    --color-border: #3a3a5a;
+    --color-code-bg: #222240;
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 1px 4px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}

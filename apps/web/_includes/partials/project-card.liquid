@@ -1,0 +1,11 @@
+<article class="project-card">
+  <a href="{{ project.url }}">
+    {% if project.data.coverImage %}
+      <img src="{{ project.data.coverImage }}" alt="{{ project.data.title }}" class="project-card-image" loading="lazy" decoding="async">
+    {% endif %}
+    <div class="project-card-content">
+      <h3 class="project-card-title">{{ project.data.title }}</h3>
+      <p class="project-card-description">{{ project.data.description }}</p>
+    </div>
+  </a>
+</article>

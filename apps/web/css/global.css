@@ -1,0 +1,114 @@
+/* Base Element Styles */
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+h1, h2, h3, h4 {
+  line-height: var(--line-height-heading);
+  letter-spacing: var(--letter-spacing-tight);
+  font-weight: 600;
+}
+
+h1 { font-size: var(--font-size-2xl); }
+h2 { font-size: var(--font-size-xl); }
+h3 { font-size: var(--font-size-lg); }
+h4 { font-size: var(--font-size-md); }
+
+a {
+  color: var(--color-accent);
+  text-underline-offset: 0.2em;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* Prose: styles for rendered markdown content */
+.prose {
+  max-width: var(--container-narrow);
+}
+
+.prose > * + * {
+  margin-block-start: var(--space-sm);
+}
+
+.prose > h2 + *,
+.prose > h3 + *,
+.prose > h4 + * {
+  margin-block-start: var(--space-xs);
+}
+
+.prose h2 {
+  margin-block-start: var(--space-xl);
+}
+
+.prose h3 {
+  margin-block-start: var(--space-lg);
+}
+
+.prose ul,
+.prose ol {
+  padding-inline-start: 1.5em;
+}
+
+.prose li + li {
+  margin-block-start: var(--space-3xs);
+}
+
+.prose blockquote {
+  border-inline-start: 3px solid var(--color-accent);
+  padding-inline-start: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.prose code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  background-color: var(--color-code-bg);
+  padding: 0.15em 0.35em;
+  border-radius: var(--radius-sm);
+}
+
+.prose pre {
+  background-color: var(--color-code-bg);
+  padding: var(--space-sm);
+  border-radius: var(--radius);
+  overflow-x: auto;
+  font-size: var(--font-size-sm);
+}
+
+.prose pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+}
+
+.prose img {
+  border-radius: var(--radius);
+  margin-block: var(--space-md);
+}
+
+.prose figure {
+  margin-block: var(--space-md);
+}
+
+.prose figcaption {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-block-start: var(--space-2xs);
+  text-align: center;
+}
+
+.prose hr {
+  border: none;
+  border-block-start: 1px solid var(--color-border);
+  margin-block: var(--space-lg);
+}
