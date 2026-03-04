@@ -68,8 +68,3 @@ body {
   align-items: center;
   gap: var(--space-sm);
 }
-
-/* Section spacing on homepage */
-section + section {
-  margin-block-start: var(--space-2xl);
-}

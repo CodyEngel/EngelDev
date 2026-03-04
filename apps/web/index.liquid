@@ -4,6 +4,7 @@ title: Home
 ---
 {% render "partials/hero.liquid", site: site %}
 
+{% if collections.featuredProjects != empty %}
 <section class="container">
   <h2 class="section-heading">Projects</h2>
   <div class="grid">
@@ -13,6 +14,7 @@ title: Home
   </div>
   <p class="view-all"><a href="/projects/">View all projects &rarr;</a></p>
 </section>
+{% endif %}
 
 <section class="container">
   <h2 class="section-heading">Recent Posts</h2>
