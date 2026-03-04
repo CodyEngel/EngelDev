@@ -1,4 +1,5 @@
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import embedYouTube from "eleventy-plugin-youtube-embed";
 
 export default function(eleventyConfig) {
     eleventyConfig.ignores.add("README.md");
@@ -9,6 +10,7 @@ export default function(eleventyConfig) {
 
     // Enable 11ty Plugins
     eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(embedYouTube);
 
     // Passthrough copy
     eleventyConfig.addPassthroughCopy("css");

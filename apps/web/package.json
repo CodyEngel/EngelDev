@@ -14,6 +14,7 @@
   "packageManager": "pnpm@10.30.3",
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2"
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "eleventy-plugin-youtube-embed": "^1.13.1"
   }
 }
