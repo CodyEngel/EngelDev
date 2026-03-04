@@ -1,0 +1,412 @@
+/* ===== Navigation ===== */
+
+.site-logo {
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-text);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.site-logo:hover {
+  color: var(--color-accent);
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: var(--space-xs);
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  padding: var(--space-3xs) var(--space-2xs);
+  border-radius: var(--radius-sm);
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.nav-list a:hover {
+  color: var(--color-text);
+  background-color: var(--color-bg-secondary);
+}
+
+/* Mobile nav toggle */
+.mobile-nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-3xs);
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+  position: relative;
+  transition: background-color var(--transition-fast);
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+  position: absolute;
+  transition: transform var(--transition-base);
+}
+
+.hamburger::before { top: -7px; }
+.hamburger::after { top: 7px; }
+
+/* Hamburger X state */
+.mobile-nav-toggle[aria-expanded="true"] .hamburger {
+  background-color: transparent;
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .hamburger::before {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.mobile-nav-toggle[aria-expanded="true"] .hamburger::after {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .mobile-nav-toggle {
+    display: block;
+    z-index: 110;
+  }
+
+  .primary-nav {
+    position: fixed;
+    inset: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-md);
+    background-color: var(--color-bg);
+    transform: translateX(100%);
+    transition: transform var(--transition-base);
+    z-index: 105;
+  }
+
+  .primary-nav.is-open {
+    transform: translateX(0);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+  }
+
+  .nav-list a {
+    font-size: var(--font-size-lg);
+  }
+}
+
+
+/* ===== Theme Toggle ===== */
+
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  padding: var(--space-3xs) var(--space-2xs);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  color: var(--color-text);
+  border-color: var(--color-text-secondary);
+}
+
+/* Sun/moon icons via CSS */
+.theme-toggle-icon::before {
+  content: '\263C'; /* Sun */
+}
+
+[data-theme="dark"] .theme-toggle-icon::before {
+  content: '\263E'; /* Moon */
+}
+
+
+/* ===== Hero ===== */
+
+.hero {
+  padding-block: var(--space-3xl) var(--space-2xl);
+}
+
+.hero-greeting {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  letter-spacing: var(--letter-spacing-tight);
+  margin-block-end: var(--space-xs);
+}
+
+.hero-tagline {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+
+/* ===== Section Headings ===== */
+
+.section-heading {
+  font-size: var(--font-size-xl);
+  margin-block-end: var(--space-lg);
+}
+
+
+/* ===== Project Cards ===== */
+
+.project-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background-color: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.project-card a:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-card-image {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  width: 100%;
+}
+
+.project-card-content {
+  padding: var(--space-sm) var(--space-md);
+}
+
+.project-card-title {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  margin-block-end: var(--space-3xs);
+}
+
+.project-card-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+
+/* ===== Post Cards ===== */
+
+.post-card a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: var(--space-md) 0;
+  border-block-end: 1px solid var(--color-border);
+  transition: background-color var(--transition-fast);
+}
+
+.post-card:first-child a {
+  border-block-start: 1px solid var(--color-border);
+}
+
+.post-card a:hover {
+  background-color: var(--color-bg-secondary);
+  margin-inline: calc(var(--space-sm) * -1);
+  padding-inline: var(--space-sm);
+  border-radius: var(--radius);
+}
+
+.post-card time {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.post-card-title {
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  margin-block: var(--space-3xs);
+}
+
+.post-card-excerpt {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.5;
+}
+
+
+/* ===== Buttons ===== */
+
+.button {
+  display: inline-block;
+  padding: var(--space-2xs) var(--space-md);
+  background-color: var(--color-accent);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+  transition: background-color var(--transition-fast);
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--color-accent-hover);
+  color: #ffffff;
+}
+
+
+/* ===== Tags ===== */
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3xs);
+  list-style: none;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.15em 0.6em;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.tag:hover {
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+
+/* ===== Pagination ===== */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-block-start: var(--space-xl);
+  padding-block-start: var(--space-lg);
+  border-block-start: 1px solid var(--color-border);
+}
+
+.pagination a {
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}
+
+.pagination-current {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+
+/* ===== Page Headers ===== */
+
+.page-header,
+.post-header,
+.project-header {
+  margin-block-end: var(--space-md);
+  margin-block-start: var(--space-md);
+}
+
+.page-header h1,
+.post-header h1,
+.project-header h1 {
+  margin-block-end: var(--space-xs);
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+
+/* ===== Project Detail ===== */
+
+.project-cover {
+  margin-block-end: var(--space-lg);
+}
+
+.project-cover img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+}
+
+.project-description {
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
+  margin-block-end: var(--space-sm);
+  line-height: 1.5;
+}
+
+
+/* ===== View All Link ===== */
+
+.view-all {
+  margin-block-start: var(--space-md);
+}
+
+.view-all a {
+  font-weight: 500;
+  font-size: var(--font-size-sm);
+}
+
+
+/* ===== Social Links (Footer) ===== */
+
+.social-links {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.social-links a {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.social-links a:hover {
+  color: var(--color-accent);
+}
+
+.copyright {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}

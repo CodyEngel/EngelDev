@@ -1,0 +1,7 @@
+<ul class="tag-list" role="list">
+  {% for tag in tags %}
+    {% unless tag == "post" or tag == "project" or tag == "page" %}
+      <li><a href="/blog/tags/{{ tag | slugify }}/" class="tag">{{ tag }}</a></li>
+    {% endunless %}
+  {% endfor %}
+</ul>

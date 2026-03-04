@@ -1,0 +1,9 @@
+<article class="post-card">
+  <a href="{{ post.url }}">
+    <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+    <h3 class="post-card-title">{{ post.data.title }}</h3>
+    {% if post.data.description %}
+      <p class="post-card-excerpt">{{ post.data.description }}</p>
+    {% endif %}
+  </a>
+</article>

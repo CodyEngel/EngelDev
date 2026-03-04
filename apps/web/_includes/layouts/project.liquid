@@ -1,0 +1,23 @@
+---
+layout: base.liquid
+---
+<article class="container project-detail">
+  {% if coverImage %}
+    <div class="project-cover">
+      <img src="{{ coverImage }}" alt="{{ title }}" loading="lazy" decoding="async">
+    </div>
+  {% endif %}
+  <header class="project-header">
+    <h1>{{ title }}</h1>
+    <p class="project-description">{{ description }}</p>
+    {% if projectUrl %}
+      <a href="{{ projectUrl }}" class="button" target="_blank" rel="noopener">View Project</a>
+    {% endif %}
+    {% if tags.size > 0 %}
+      {% render "partials/tag-list.liquid", tags: tags %}
+    {% endif %}
+  </header>
+  <div class="prose">
+    {{ content }}
+  </div>
+</article>

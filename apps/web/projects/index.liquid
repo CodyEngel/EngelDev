@@ -1,0 +1,17 @@
+---
+layout: base.liquid
+title: Projects
+permalink: /projects/
+tags: []
+eleventyExcludeFromCollections: true
+---
+<div class="container">
+  <header class="page-header">
+    <h1>Projects</h1>
+  </header>
+  <div class="grid">
+    {% for project in collections.projects %}
+      {% render "partials/project-card.liquid", project: project %}
+    {% endfor %}
+  </div>
+</div>
