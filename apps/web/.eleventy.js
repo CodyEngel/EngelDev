@@ -1,9 +1,14 @@
-module.exports = function(eleventyConfig) {
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+
+export default function(eleventyConfig) {
     eleventyConfig.ignores.add("README.md");
 
     eleventyConfig.setLiquidOptions({
         jsTruthy: true
     });
+
+    // Enable 11ty Plugins
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     // Passthrough copy
     eleventyConfig.addPassthroughCopy("css");
