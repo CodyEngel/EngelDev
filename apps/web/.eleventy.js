@@ -15,12 +15,15 @@ export default function(eleventyConfig) {
     eleventyConfig.addPlugin(embedYouTube);
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         extensions: 'html',
-        formats: ['avif', 'webp', 'jpeg'],
+        formats: ['webp', 'gif', 'jpeg'],
         widths: [320, 570, 880, 1024, 2048],
         defaultAttributes: {
             loading: 'lazy',
             decoding: 'async',
             sizes: '90vw',
+        },
+        sharpOptions: {
+            animated: true,
         },
         outputDir: './_site/assets/images/generated/',
         urlPath: '/assets/images/generated/',

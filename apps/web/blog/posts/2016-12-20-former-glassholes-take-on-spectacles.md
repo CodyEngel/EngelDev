@@ -12,10 +12,6 @@ tags:
 
 ![This is me, circa January 2014, in the men’s bathroom inside of Neptune North at Northern Illinois University.](../../assets/images/source/cody-google-glass-niu.webp)
 
-
-
-
-
 Once upon a time I was one of eight thousand people selected to purchase Google Glass. So in June of 2013 I got in my car and drove from Chicago to New York City to pick them up. The car ride was roughly thirteen hours and I only almost fell asleep twice at the wheel; to say the trip was worth it was an understatement. You see, Google Glass was an ambitious device that taught us how to design small, glance-able apps. If you own a smartwatch then you have Glass to thank for smoothing out the rough edges.
 
 Of course the media grabbed hold of this technology and through a never-ending campaign of fear mongering they helped to prevent the device from reaching a wide consumer audience. That, and they looked incredibly dorky, were incredibly expensive ($1,500, but why?), and had legal obstacles to jump through when it came to distracted driving laws.
