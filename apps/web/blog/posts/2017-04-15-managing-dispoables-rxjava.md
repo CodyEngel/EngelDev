@@ -1,7 +1,7 @@
 ---
 title: Managing Disposables in RxJava 2 — For Android
 date: 2017-04-15
-description: SHORT DESCRIPTION
+description: Managing Disposables in RxJava 2 the wrong way.
 tags:
   - android
   - java
