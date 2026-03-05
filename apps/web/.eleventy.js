@@ -1,5 +1,7 @@
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import embedYouTube from "eleventy-plugin-youtube-embed";
+import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+
 
 export default function(eleventyConfig) {
     eleventyConfig.ignores.add("README.md");
@@ -11,6 +13,18 @@ export default function(eleventyConfig) {
     // Enable 11ty Plugins
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(embedYouTube);
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+        extensions: 'html',
+        formats: ['avif', 'webp', 'jpeg'],
+        widths: [320, 570, 880, 1024, 2048],
+        defaultAttributes: {
+            loading: 'lazy',
+            decoding: 'async',
+            sizes: '90vw',
+        },
+        outputDir: './_site/assets/images/generated/',
+        urlPath: '/assets/images/generated/',
+    });
 
     // Passthrough copy
     eleventyConfig.addPassthroughCopy("css");
