@@ -4,6 +4,7 @@ date: 2017-04-04
 description: MVI without a Presenter, the way it was meant to be.
 tags:
   - android
+  - java
   - software engineering
   - mvi
   - reactive programming
