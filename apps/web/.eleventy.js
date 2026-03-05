@@ -2,7 +2,6 @@ import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import embedYouTube from "eleventy-plugin-youtube-embed";
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
 
-
 export default function(eleventyConfig) {
     eleventyConfig.ignores.add("README.md");
 
@@ -30,7 +29,6 @@ export default function(eleventyConfig) {
     });
 
     // Passthrough copy
-    eleventyConfig.addPassthroughCopy("css");
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("assets");
 
