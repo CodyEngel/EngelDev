@@ -94,6 +94,8 @@ a:hover {
 .prose img {
   border-radius: var(--radius);
   margin-block: var(--space-md);
+  max-width: 100%;
+  height: auto;
 }
 
 .prose figure {
