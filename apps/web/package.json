@@ -15,6 +15,7 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "@bradleyburgess/eleventy-plugin-img-figcaptions": "^1.0.2",
     "eleventy-plugin-youtube-embed": "^1.13.1"
   },
   "devDependencies": {

@@ -1,6 +1,7 @@
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import embedYouTube from "eleventy-plugin-youtube-embed";
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import imgFigCaptions from '@bradleyburgess/eleventy-plugin-img-figcaptions';
 
 export default function(eleventyConfig) {
     eleventyConfig.ignores.add("README.md");
@@ -27,6 +28,7 @@ export default function(eleventyConfig) {
         outputDir: './_site/assets/images/generated/',
         urlPath: '/assets/images/generated/',
     });
+    eleventyConfig.addPlugin(imgFigCaptions);
 
     // Passthrough copy
     eleventyConfig.addPassthroughCopy("js");
