@@ -296,7 +296,3 @@ its entirety (along with a terrible diagram) on
 issues while testing please
 [file an issue](https://github.com/CodyEngel/Flax/issues), it can be
 as small as issues with the syntax or as big as a memory leak.
-
-I'm still getting into writing on Medium. My goal is to write at least
-one article per week, if you enjoy my writing style consider clicking
-the heart and following me.
