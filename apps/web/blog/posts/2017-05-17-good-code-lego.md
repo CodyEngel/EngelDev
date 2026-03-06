@@ -7,8 +7,6 @@ tags:
   - object oriented programming
 ---
 
-# Good Code Is Like LEGO
-
 ![Thanks for the awesome picture Leonardo Melo over on Flickr!](../../assets/images/source/2017-05-17-good-code-lego.jpg)
 
 When I was a kid I loved playing with LEGO. I think at one point I had

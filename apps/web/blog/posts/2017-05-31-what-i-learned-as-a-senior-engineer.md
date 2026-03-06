@@ -10,8 +10,6 @@ tags:
   - career
 ---
 
-# What I Have Learned as a Senior Engineer and Former Team Lead.
-
 ![This has nothing to do with this article but I liked the macro shot, thanks Alex Blăjan over on Unsplash!](../../assets/images/source/2017-05-31-what-i-learned-as-a-senior-engineer.jpg "This has nothing to do with this article but I liked the macro shot, thanks Alex Blăjan over on Unsplash!")
 
 I have had the incredible opportunity to work with a wide variety of
