@@ -19,7 +19,7 @@ title: Home
 <section class="container">
   <h2 class="section-heading">Recent Posts</h2>
   <div class="stack">
-    {% for post in collections.posts limit: 3 %}
+    {% for post in collections.posts limit: 6 %}
       {% render "partials/post-card.liquid", post: post %}
     {% endfor %}
   </div>
