@@ -9,6 +9,7 @@ tags:
   - unidirectional data flow
   - mvi
   - software engineering
+  - java
 ---
 
 ![Photo by Noah Rosenfield via Unsplash](../../assets/images/source/flax-for-android.webp)

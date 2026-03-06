@@ -1,6 +1,6 @@
 ---
 title: The Android Emulator Doesn't Suck (No Really, It Doesn't)
-date: 2017-04-29
+date: 2017-04-28
 description: The Android emulator used to suck, but it doesn't anymore.
 tags:
   - android
@@ -15,7 +15,7 @@ Android developer then you needed a physical phone. However a lot has
 changed since then, the Android emulator doesn't suck, no really, it
 doesn't.
 
-![hero image](../../assets/images/source/2017-04-29-android-emulator-sucks-1.jpg)
+![hero image](../../assets/images/source/2017-04-28-android-emulator-sucks-1.jpg)
 
 Ray Hennessy, thanks for this great picture from Unsplash.
 Fun fact: this is the only picture you get when you search for
@@ -29,7 +29,7 @@ they could test how well the phones actually worked in the real world
 while driving, this would make sense except the emulator lets you easily
 emulate location data.
 
-![Emulator location settings](../../assets/images/source/2017-04-29-android-emulator-sucks-2.jpg)
+![Emulator location settings](../../assets/images/source/2017-04-28-android-emulator-sucks-2.jpg)
 
 You can do something basic such as just setting your
 [latitude and longitude](http://www.latlong.net/),
@@ -48,7 +48,7 @@ have no network connectivity. One common way people will test this on an
 actual device is turning airplane mode on or off, and this works fine,
 but it also requires you lose focus of the app.
 
-![The emulator responds well to changes in the cellular network](../../assets/images/source/2017-04-29-android-emulator-sucks-3.jpg)
+![The emulator responds well to changes in the cellular network](../../assets/images/source/2017-04-28-android-emulator-sucks-3.jpg)
 
 Now imagine you need to notify the user that they've lost network
 connectivity while in the app. Again, airplane mode works fine, but you
@@ -67,7 +67,7 @@ Android you *should* be conscious of the device's battery and perhaps
 limit background activities or save data if the phone is getting close
 to dying.
 
-![Battery emulation settings](../../assets/images/source/2017-04-29-android-emulator-sucks-4.jpg)
+![Battery emulation settings](../../assets/images/source/2017-04-28-android-emulator-sucks-4.jpg)
 
 If you are only developing your app using a physical device you probably
 aren't too concerned about the battery status because the idea of
@@ -81,7 +81,7 @@ can't honestly remember when you *couldn't* do this. However this is my
 chance to poke fun at the current U.S. administration so I figured it'd
 be a good idea to talk about it.
 
-![A very important call from President Drumph!](../../assets/images/source/2017-04-29-android-emulator-sucks-5.jpg)
+![A very important call from President Drumph!](../../assets/images/source/2017-04-28-android-emulator-sucks-5.jpg)
 
 Maybe you are building an application to do something when you receive a
 phone call, or maybe you just want to test what happens when you receive
@@ -91,7 +91,7 @@ asking your Great Aunt Sally to call you, and then you have to listen to
 her yammer on and on about her cat. Admit it, this is way better than
 that.
 
-![Okay Donald Drumph, cool story but I have an article to write](../../assets/images/source/2017-04-29-android-emulator-sucks-6.jpg)
+![Okay Donald Drumph, cool story but I have an article to write](../../assets/images/source/2017-04-28-android-emulator-sucks-6.jpg)
 
 You can also send fake text messages to the emulator. There are plenty
 of useful reasons to do this, however I wanted to pretend that Donald
@@ -114,7 +114,7 @@ from movement to relative humidity, and the emulator can emulate all of
 those things. Admittedly I have not had much use for this section but
 it's so darn cool I feel obligated to talk about it.
 
-![Sensor emulation settings](../../assets/images/source/2017-04-29-android-emulator-sucks-7.jpg)
+![Sensor emulation settings](../../assets/images/source/2017-04-28-android-emulator-sucks-7.jpg)
 
 The accelerometer lets you emulate device rotation as well as movement.
 While it gives you fairly technical terms like yaw, pitch, and roll, the
@@ -124,7 +124,7 @@ move it along an X and Y axis. If you've ever had to test out
 accelerometer data and haven't used the emulator, you probably worked
 harder than you needed to.
 
-![Additional sensor settings](../../assets/images/source/2017-04-29-android-emulator-sucks-8.jpg)
+![Additional sensor settings](../../assets/images/source/2017-04-28-android-emulator-sucks-8.jpg)
 
 The emulator also provides you with additional sensors. This means you
 can adjust things like ambient temperature, magnetic field, light,
@@ -139,7 +139,7 @@ make my life easier. The thing that blew me away was their emulator
 could use the webcam so when you opened the camera it would display
 something as opposed to an emulated camera.
 
-![Come on Google, get it together!](../../assets/images/source/2017-04-29-android-emulator-sucks-9.jpg)
+![Come on Google, get it together!](../../assets/images/source/2017-04-28-android-emulator-sucks-9.jpg)
 
 If you are working on an app which requires the use of the camera, you
 most likely need to use a physical device for testing. This is one of
@@ -147,7 +147,7 @@ the most annoying things with the Android emulator, especially since you
 can setup the emulator to use your webcam, yet it still uses the
 emulated camera.
 
-![Oh wait, it does work](../../assets/images/source/2017-04-29-android-emulator-sucks-10.jpg)
+![Oh wait, it does work](../../assets/images/source/2017-04-28-android-emulator-sucks-10.jpg)
 
 Okay so the emulator actually does use your webcam now. I'm not quite
 sure when this started working, I checked tonight and was shocked to see
