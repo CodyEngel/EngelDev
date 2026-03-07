@@ -1,11 +1,11 @@
 ---
 title: "Agile is cooking, Scrum is just a recipe, and the team is a restaurant."
 date: 2017-12-18
-description: A cooking metaphor explains Agile, Scrum, and team structure: Agile is cooking, Scrum is the recipe, and the team is a restaurant.
+description: A cooking metaphor explains Agile, Scrum, and team structure. Agile is cooking, Scrum is the recipe, and the team is a restaurant.
 tags:
   - agile
   - scrum
-  - software-engineering
+  - software engineering
   - product
 ---
 

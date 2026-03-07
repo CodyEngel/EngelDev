@@ -3,7 +3,7 @@ title: "The Painful Truths About Stress"
 date: 2018-12-20
 description: How unmanaged stress and anxiety led to real physical symptoms — chest pain, headaches, stomach issues — and what finally helped.
 tags:
-  - mental-health
+  - mental health
   - stress
   - anxiety
   - personal

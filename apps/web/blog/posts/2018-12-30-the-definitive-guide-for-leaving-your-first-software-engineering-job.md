@@ -4,7 +4,7 @@ date: 2018-12-30
 description: Practical answers to common questions about timing interviews, giving notice, handling references, and leaving your first software engineering job.
 tags:
   - career
-  - software-engineering
+  - software engineering
 ---
 
 This morning I was browsing Reddit when I stumbled upon a post in

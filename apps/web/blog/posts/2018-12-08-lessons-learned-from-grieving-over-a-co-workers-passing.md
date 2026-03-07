@@ -5,7 +5,7 @@ description: Reflections on losing a co-worker at a young age, and the lessons i
 tags:
   - personal
   - career
-  - mental-health
+  - mental health
 ---
 
 It has been nearly one year since a co-worker of mine past away and an impossibly young age. I've wanted to write *something* about what I learned going through that experience which resulted in a 2,000 word article that I'll probably never publish. However as I've been writing more this month I've realized his death has played a significant part of 2018 for me. Not a week goes by where I don't think about him whether it be in a minor or more significant way. So these are a collection of some of the lesson's I have learned from his passing.

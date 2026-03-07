@@ -6,7 +6,7 @@ tags:
   - android
   - kotlin
   - dagger
-  - dependency-injection
+  - dependency injection
 ---
 
 In this series we've so far discussed the fundamentals of Dagger 2, how to create modules, and what components are used for. I wanted to conclude this series by talking about how to tie all of this together into your current (or next) Android application. While this article is technically optional, I feel it actually ends up being the most important piece because it drastically cuts down on the amount of boilerplate required. With that, let's get started.

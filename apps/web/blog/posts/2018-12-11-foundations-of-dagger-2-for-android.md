@@ -6,7 +6,7 @@ tags:
   - android
   - kotlin
   - dagger
-  - dependency-injection
+  - dependency injection
 ---
 
 When I was first learning Dagger 2 I focused on the main parts of the framework as opposed to areas I'd be interacting with most often. This meant I spent a lot of time reading about modules and components but fairly little time learning about how I actually provide those dependencies to the classes I'd be invoking in my code. I think that was more detrimental than beneficial and I want to start off by discussing what Dagger 2 looks like in your day to day code; we'll ignore modules and components for this article. Keep in mind that all of the code I use for this article will come from the [GithubBrowserSample by Google](https://github.com/googlesamples/android-architecture-components/tree/master/GithubBrowserSample), [forked by me](https://github.com/CodyEngel/android-architecture-components/tree/master/GithubBrowserSample) in case they ever take it down in the future.

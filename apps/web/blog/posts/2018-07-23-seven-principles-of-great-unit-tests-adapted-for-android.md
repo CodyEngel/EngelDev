@@ -1,12 +1,12 @@
 ---
 title: "Seven Principles of Great Unit Tests — Adapted For Android"
 date: 2018-07-23
-description: Seven principles for writing great unit tests on Android: fast, independent, thorough, repeatable, professional, readable, and automatic.
+description: Seven principles for writing great unit tests on Android. fast, independent, thorough, repeatable, professional, readable, and automatic.
 tags:
   - android
   - kotlin
   - testing
-  - unit-tests
+  - unit tests
 ---
 
 When it comes to software engineering it's usually easy to find sources about how to write good code that is ready for production. You can look into [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html) or [SOLID Principles](https://hackernoon.com/solid-principles-made-easy-67b1246bcdf) (or both) and have a good idea of how to reliably write good code. However when it comes to writing good unit tests I've found we tend to throw good engineering practices out the window. What's even worse is testing on Android still isn't commonplace, this has resulted in lackluster information about how to test on the platform. So with all of that out of the way, what are the seven principles of great unit tests?

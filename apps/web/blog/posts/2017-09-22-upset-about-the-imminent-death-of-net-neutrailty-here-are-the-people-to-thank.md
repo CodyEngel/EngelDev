@@ -3,7 +3,7 @@ title: "Upset about the imminent death of Net Neutrailty? Here are the people to
 date: 2017-09-22
 description: A breakdown of which senators voted or abstained during the FCC vote to reinstate Ajit Pai, threatening Net Neutrality protections.
 tags:
-  - net-neutrality
+  - net neutrality
   - politics
   - internet
   - fcc

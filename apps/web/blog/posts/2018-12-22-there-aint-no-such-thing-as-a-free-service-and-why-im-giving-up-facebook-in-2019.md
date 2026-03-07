@@ -5,8 +5,8 @@ description: A deep dive into what Facebook actually knows about you — and why
 tags:
   - privacy
   - facebook
-  - social-media
-  - tech-industry
+  - social media
+  - tech industry
 ---
 
 I have been on Facebook since Thursday, September 28th, 2006 at 8:36 PM

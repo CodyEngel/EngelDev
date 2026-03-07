@@ -4,9 +4,9 @@ date: 2020-04-15
 description: The secret to agile success isn't in the tools or frameworks — it's about people, problems, and shipping software that customers actually value.
 tags:
   - agile
-  - software-engineering
+  - software engineering
   - scrum
-  - product-management
+  - product management
 ---
 
 If you are reading this article you probably have some background with

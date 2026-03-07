@@ -3,7 +3,7 @@ title: "How I Learned Nothing Is Impossible, Musings From A Software Engineer"
 date: 2017-09-11
 description: Real-world stories from a software engineer on tackling seemingly impossible challenges through creativity and parallelism.
 tags:
-  - software-engineering
+  - software engineering
   - career
   - android
 ---

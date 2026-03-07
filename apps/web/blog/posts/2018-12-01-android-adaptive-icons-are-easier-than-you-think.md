@@ -5,7 +5,7 @@ description: A step-by-step walkthrough for implementing Android adaptive icons 
 tags:
   - android
   - design
-  - android-studio
+  - android studio
 ---
 
 Adaptive icons on Android were introduced in Android Oreo, however I've found numerous applications today still aren't using them. In fact, one of the applications I work on today still uses the old legacy icon. On a new application my company is planning to release *soon* we decided to try out adaptive icons and to my surprise it was ridiculously easy so I wanted to provide a quick tutorial on how you can adapt to adaptive icons yourself.

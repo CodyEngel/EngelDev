@@ -3,8 +3,8 @@ title: "Reflecting On The Idea That Suicide Is Inconvenient"
 date: 2018-12-18
 description: A reflection on how society responds to public suicides, the systemic failures around mental health care, and why empathy matters more than annoyance.
 tags:
-  - mental-health
-  - suicide-prevention
+  - mental health
+  - suicide prevention
   - personal
   - society
 ---

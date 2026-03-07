@@ -3,10 +3,10 @@ title: "The Tech Industry Is Broken and It's Our Fault."
 date: 2018-12-16
 description: From representation in media to biased interview processes, the tech industry has diversity problems — and we all play a role in fixing them.
 tags:
-  - tech-industry
+  - tech industry
   - diversity
   - inclusion
-  - software-engineering
+  - software engineering
 ---
 
 I was walking to Chipotle with my girlfriend yesterday when she

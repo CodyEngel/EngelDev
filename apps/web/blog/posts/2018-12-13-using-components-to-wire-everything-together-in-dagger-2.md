@@ -6,7 +6,7 @@ tags:
   - android
   - kotlin
   - dagger
-  - dependency-injection
+  - dependency injection
 ---
 
 Yesterday we learned about how modules are used in Dagger 2 to tell the framework how it should provide a dependency to a class that needs it. However it's not enough to just create many different modules and expect Dagger to just work. In order to put everything together you need to create components which are the glue that holds everything together. In this article we will discuss how to use the `@Component` annotation in Dagger 2.

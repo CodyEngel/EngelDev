@@ -3,7 +3,7 @@ title: "Early And Often — How To Release Software"
 date: 2018-12-09
 description: Why releasing software every two weeks beats infrequent releases — smaller scope, drama-free deploys, and immediate customer feedback.
 tags:
-  - software-engineering
+  - software engineering
   - agile
   - android
   - product

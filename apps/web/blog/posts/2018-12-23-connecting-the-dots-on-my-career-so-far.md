@@ -4,7 +4,7 @@ date: 2018-12-23
 description: A career retrospective tracing the path from university IT work to senior software engineer, with lessons learned at each stop along the way.
 tags:
   - career
-  - software-engineering
+  - software engineering
   - android
 ---
 

@@ -3,9 +3,9 @@ title: "What I learned by abstaining from Facebook, Instagram, and Twitter for a
 date: 2018-04-05
 description: What a month-long break from Facebook, Instagram, and Twitter taught about presence, focus, and how social media shapes daily life.
 tags:
-  - social-media
+  - social media
   - productivity
-  - mental-health
+  - mental health
 ---
 
 I have spent the majority of my life online. If I had to figure out where I first started sharing my ideas online it would probably be on the [\[adult swim\] message boards](http://www.adultswim.com/misc/boards/) when I was a teenager. I spent the majority of my time discussing topics in their general board known as *Babbling*. This was also the first time I experienced the gamification of sharing online as the more posts and time you spent on their message boards the higher your rank would be. These ranks came in the form of a title others could see under your name as well as your username showing up in a different color. As time went on I started focusing my attention on *Incoherent Babbling* which was for more random discussions and really helped boost your post count. It has been more than a decade since I last logged in but I feel like that gamification to share things has stuck with me.

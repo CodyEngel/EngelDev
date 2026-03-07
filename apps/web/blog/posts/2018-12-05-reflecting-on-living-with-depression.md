@@ -3,7 +3,7 @@ title: "Reflecting On Living With Depression"
 date: 2018-12-05
 description: A personal reflection on living with dysthymia — the fatigue, lack of motivation, and indecisiveness that come with persistent depression.
 tags:
-  - mental-health
+  - mental health
   - depression
   - personal
 ---

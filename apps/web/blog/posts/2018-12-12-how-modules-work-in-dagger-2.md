@@ -6,7 +6,7 @@ tags:
   - android
   - kotlin
   - dagger
-  - dependency-injection
+  - dependency injection
 ---
 
 Yesterday we discussed the foundations of Dagger 2 for Android. That article outlined the importance of the `@Inject` annotation and eluded to how this dependency injection framework would hook into those annotations. The purpose of this article is to explain the why and how of the `@Module` annotation in Dagger.

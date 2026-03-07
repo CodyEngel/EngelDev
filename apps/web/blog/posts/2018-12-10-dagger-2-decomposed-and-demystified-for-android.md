@@ -6,7 +6,7 @@ tags:
   - android
   - kotlin
   - dagger
-  - dependency-injection
+  - dependency injection
 ---
 
 When it comes to confusing and yet incredibly powerful frameworks, Dagger 2 has to rank somewhere in the top five. What are components? What are modules? What does that `@Inject` annotation do? How do I provide dependencies to the other modules? Isn't Dagger 2 just a lot of extra work? I hope to answer all of these questions in a series of articles aimed at teaching Dagger 2 in the way that made the most sense to me. I'm happy to say that we have seen success using this dependency injection framework at [ActiveCampaign](https://www.activecampaign.com/) and I hope to help others experience similar success too.

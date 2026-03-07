@@ -5,7 +5,7 @@ description: Why taking the last week of the year off has become a valuable annu
 tags:
   - productivity
   - career
-  - mental-health
+  - mental health
 ---
 
 At the end of every year I take off between Christmas and The New Year.

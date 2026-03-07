@@ -5,8 +5,8 @@ description: Story points aren't tied to hours, but used correctly they enable v
 tags:
   - agile
   - scrum
-  - software-engineering
-  - product-management
+  - software engineering
+  - product management
 ---
 
 When I first encountered story pointing it was at a digital agency. In

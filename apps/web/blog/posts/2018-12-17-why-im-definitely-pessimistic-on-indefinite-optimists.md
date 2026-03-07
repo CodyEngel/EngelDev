@@ -3,7 +3,7 @@ title: "Why I'm Definitely Pessimistic On Indefinite Optimists"
 date: 2018-12-17
 description: Inspired by Peter Thiel's Zero to One, a reflection on why definite optimism — having a plan — is far more valuable than hoping things work out.
 tags:
-  - book-review
+  - book review
   - career
   - leadership
   - product
