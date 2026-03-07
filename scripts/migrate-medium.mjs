@@ -17,7 +17,7 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const ROOT = join(__dirname, '..');
 const ARTICLES_FILE = join(ROOT, 'articles-to-migrate.md');
 const POSTS_DIR = join(ROOT, 'apps/web/blog/posts');
-const IMAGES_DIR = join(ROOT, 'apps/web/images/source');
+const IMAGES_DIR = join(ROOT, 'apps/web/assets/images/source');
 const MEDIA_DIR = join(ROOT, '_media');
 const BLOG_MD = join(ROOT, 'blog.md');
 
