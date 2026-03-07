@@ -1,21 +1,14 @@
 ---
 title: "The Definitive Guide For Leaving Your First Software Engineering Job"
 date: 2018-12-30
-description: SHORT DESCRIPTION HERE
-tags: 
-  - REPLACE ME
-  - REPLACE ME TOO
-migrationPending: true
+description: Practical answers to common questions about timing interviews, giving notice, handling references, and leaving your first software engineering job.
+tags:
+  - career
+  - software-engineering
 ---
 
-
-# The Definitive Guide For Leaving Your First Software Engineering Job
-
 This morning I was browsing Reddit when I stumbled upon a post in
-/r/cscareerquestions titled <a
-href="https://www.reddit.com/r/cscareerquestions/comments/aaqu07/is_there_a_guide_on_how_to_move_on_from_your/"
-class="z nv" rel="noopener ugc nofollow" target="_blank"><em>Is there a
-guide on how to move on from your first job?</em></a> At first this
+/r/cscareerquestions titled [*Is there a guide on how to move on from your first job?*](https://www.reddit.com/r/cscareerquestions/comments/aaqu07/is_there_a_guide_on_how_to_move_on_from_your/) At first this
 seemed like a strange request, why do you need an entire guide around
 how to do this? Then I started thinking a bit more and remembering what
 it was like when I first entered into the industry and I realized it
@@ -24,29 +17,19 @@ read through one), since a lot of the questions the person asked made
 perfect sense. I wanted to take the chance today to respond to the
 questions they asked.
 
-<figure class="ny nz oa ob oc nx bd paragraph-image">
-<img src="_media/405026_image1.jpg" loading="eager"
-role="presentation" />
-<figcaption>Photo by <a
-href="https://unsplash.com/photos/80VTQEkRh1c?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-class="z nv" rel="noopener ugc nofollow" target="_blank">Daniel
-McCullough</a> on <a
-href="https://unsplash.com/search/photos/interview?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-class="z nv" rel="noopener ugc nofollow"
-target="_blank">Unsplash</a></figcaption>
-</figure>
+![Photo by Daniel McCullough on Unsplash](../../assets/images/source/2018-12-30-the-definitive-guide-for-leaving-your-first-software-engineering-job-1.jpg "Photo by Daniel McCullough on Unsplash")
 
 ## How do you find time for interviews?
 
 Finding time to interview can seem fairly daunting at first but it
-really isn’t too bad, especially if you are selective with the places
-you’ve applied at. This all starts with what type of interview you are
-doing which I’d break up into three different types which have an
+really isn't too bad, especially if you are selective with the places
+you've applied at. This all starts with what type of interview you are
+doing which I'd break up into three different types which have an
 increasing time commitment.
 
 ### Interviewing with the recruiter.
 
-I’m a little hesitant to bucket this into an *interview* since the time
+I'm a little hesitant to bucket this into an *interview* since the time
 commitment is so small but you are still talking about your experience
 and this is typically the first step companies take to vet candidates.
 In these cases you are safe to block thirty minutes on your calendar
@@ -57,7 +40,7 @@ million different reasons you could have to talk on the phone.
 
 I use this opportunity to step away from my desk so I can divulge in my
 experience without worrying about a co-worker eavesdropping. If your
-office has a common area that’s probably fine, or you could walk to a
+office has a common area that's probably fine, or you could walk to a
 coffee shop, or you could go sit in your car for a bit. The only thing
 to keep in mind is this is still an interview, and you should make sure
 it will be easy for the person on the other end to hear what you are
@@ -68,11 +51,11 @@ screen.
 
 At this stage the recruiter is happy with your answers and you have
 graduated to speaking with a member of their engineering staff. At this
-point in time it’s a good idea to be sitting at a computer where you can
+point in time it's a good idea to be sitting at a computer where you can
 answer questions (the recruiter should have given you specific
-instructions with what to expect). During these interviews I’d recommend
+instructions with what to expect). During these interviews I'd recommend
 working from home, if your company has a relaxed policy around remote
-work then don’t worry about coming up with an excuse.
+work then don't worry about coming up with an excuse.
 
 On the other hand if your company needs reasons for working from home
 this is where you unfortunately will want to start coming up with *some*
@@ -92,15 +75,15 @@ Once you are at this point you need to start coordinating and planning
 things out a bit more. During my last job hunt I had four on-sites with
 my top three companies. In general this is where you need to start
 taking time off, fortunately for myself my company had an unlimited PTO
-policy and since I was getting my work done there wasn’t much push back
+policy and since I was getting my work done there wasn't much push back
 when I requested days off. When I worked at companies with fixed buckets
 I would take a half-day for each on-site which typically was enough.
-It’s important to keep this part in mind though because you don’t want
+It's important to keep this part in mind though because you don't want
 to overbook with on-site interviews and find you are unable to take the
 time off.
 
 If you find yourself in a situation where you have to travel for your
-interview then I’d recommend trying to do that on-site on a Monday so
+interview then I'd recommend trying to do that on-site on a Monday so
 you can travel during the weekend and ideally fly back that day or
 Tuesday.
 
@@ -108,25 +91,25 @@ Tuesday.
 
 I will preface this by saying if you have a good relationship with your
 manager then there is nothing wrong with letting them know you intend to
-interview outside of the company. In the past I’ve had managers that I
+interview outside of the company. In the past I've had managers that I
 trusted enough where I would have informed them of this, except by the
 time I started interviewing elsewhere they were no longer around so I
-haven’t had the opportunity to try this myself so your mileage may vary.
+haven't had the opportunity to try this myself so your mileage may vary.
 
 ## How long should you stay at your first job?
 
 There is no right or wrong answer to this question because in short: it
 depends. You should stay at your first job (and any job) as long as you
 still find yourself learning and you are happy with the company. Once
-you start becoming bitter about a company it’s best to start planning
-your exit strategy because it’s not good for you and it’s not fair to
-those around you (just because you’re unhappy doesn’t mean others are).
+you start becoming bitter about a company it's best to start planning
+your exit strategy because it's not good for you and it's not fair to
+those around you (just because you're unhappy doesn't mean others are).
 
 I stayed at my first job for four months before moving on. My manager
-had sixteen direct reports and didn’t sit anywhere near me (I didn’t
+had sixteen direct reports and didn't sit anywhere near me (I didn't
 know where she sat for my first month). To no fault of their own I just
 never felt like we had much time to build a relationship and ultimately
-if you don’t trust your manager it’s hard to talk about career goals.
+if you don't trust your manager it's hard to talk about career goals.
 They were hoping I would become a Tibco developer and continue to work
 on an internal C# web app that ran on IE6. I wanted to pursue a career
 as a mobile developer so I found another company that allowed me to grow
@@ -136,34 +119,26 @@ have stuck around quite a bit longer.
 
 ### Are you looking for an actual time frame?
 
-If you want an actual time frame then I’d say as long as you stay at
-your first company for one year you are in the clear. It’s easy to make
+If you want an actual time frame then I'd say as long as you stay at
+your first company for one year you are in the clear. It's easy to make
 a narrative around why you only stayed for one year and there are plenty
 of people that leave before their first year.
 
 If you are approaching the three year mark at your first company then it
 is a good idea to start reflecting on where you are now and if you are
-still happy with that. Typically merit salary increases aren’t
-incredibly competitive as the largest I’ve received was just shy of five
-percent. On the other hand the lowest salary increase I’ve accepted from
+still happy with that. Typically merit salary increases aren't
+incredibly competitive as the largest I've received was just shy of five
+percent. On the other hand the lowest salary increase I've accepted from
 another company was fourteen percent with the highest being a little
 over twenty.
 
-## Get Cody Engel’s stories in your inbox
-
-Join Medium for free to get updates from this writer.
-
-Subscribe
-
-Subscribe
-
-A fairly normal number I’ve seen thrown around is to stay with your
+A fairly normal number I've seen thrown around is to stay with your
 company for two years. This gives you enough time to build compelling
 relationships with others, you can complete a few projects, and your
-salary shouldn’t stagnate. If you find yourself in a position where you
-don’t really care about making more money then feel free to ignore this
-advice (although I’ve found most people at the start of their careers
-complaining that they don’t make enough).
+salary shouldn't stagnate. If you find yourself in a position where you
+don't really care about making more money then feel free to ignore this
+advice (although I've found most people at the start of their careers
+complaining that they don't make enough).
 
 ## How do you handle references?
 
@@ -171,13 +146,13 @@ This is another situation where it really depends on your specific
 company and the circumstances around it. If this is for a background
 check then they will usually just call your employer to ask if you work
 there and if your title lines up with what you told them. In these cases
-I’ve never encountered any issues, if you’re fired out of retribution
+I've never encountered any issues, if you're fired out of retribution
 there is likely a lawyer that would love to work with you.
 
 ### No, I need actual references.
 
-In my experience this is a fairly rare occurrence. I think I’ve only had
-one company request references from me and in this case you’ll want to
+In my experience this is a fairly rare occurrence. I think I've only had
+one company request references from me and in this case you'll want to
 make sure the people you give will talk highly of you. If you have
 friends at work that know you are interviewing elsewhere or you are
 comfortable asking for a reference then start there. Outside of that
@@ -197,9 +172,9 @@ this unfortunately was a topic of discussion for several months and they
 would have backed out on it had it not been in writing.
 
 If you find yourself in a situation where the company promised something
-and it was in the contract and they are now backing out of it then it’s
+and it was in the contract and they are now backing out of it then it's
 best to bring it up to your manager. In these situations there might be
-things that can be done, but ultimately you have to decide if it’s worth
+things that can be done, but ultimately you have to decide if it's worth
 finding a lawyer over.
 
 ### Which brings me to my side note.
@@ -213,13 +188,13 @@ will change overtime and I set my expectations accordingly.
 ## How do you tell your boss once you accept an offer?
 
 Once you find yourself with a signed offer in hand and successful
-background check behind you it’s time to notify your boss. I have always
+background check behind you it's time to notify your boss. I have always
 broken the news by handing my boss my resignation letter in person and
 in private. If you are able to schedule a short meeting that typically
 works the best, but if you are having difficultly finding time pulling
 them aside in the morning can work too.
 
-During your conversation you should explain how when you’d like your
+During your conversation you should explain how when you'd like your
 last day to be (typically two weeks from that day is fine) and make sure
 you clear up everything revolving around your employment with the
 company during this time. Expect them to try to keep you at the company,
@@ -237,20 +212,20 @@ what I have said.
 > clear though that this decision to leave is final and I am not open to
 > negotiating against the offer I have received.
 
-### In this moment it’s important to remember less is more.
+### In this moment it's important to remember less is more.
 
-I’ve made it a personal rule of mine to never discuss where I am going
+I've made it a personal rule of mine to never discuss where I am going
 with others at my current company. There is really no value you can get
 out of divulging this information and it can actually be detrimental.
 Just think what could happen if your boss is spiteful and knows someone
-at the company you’re going to. Another scenario could see people
+at the company you're going to. Another scenario could see people
 speaking badly about the company you are going to and completely killing
 your new job rose tinted glasses.
 
 ## Bonus advice!
 
 While answering those questions I found myself wanting to add more but
-it didn’t seem directly relevant to the question at hand. I wanted to
+it didn't seem directly relevant to the question at hand. I wanted to
 offer some small bits of bonus advice for all job seekers out there
 which will hopefully help you with your future endeavors.
 
@@ -264,19 +239,19 @@ solved before you have one foot out the door.
 
 ### Collect your negative thoughts and be productive.
 
-I’ve found it fairly normal to grow bitter of your company prior to
-leaving. I’m not sure if I’ve left a company that was doing everything
-right and I was happy with (if that were the case I wouldn’t have left).
-It’s important to figure out *why* you are leaving that company so you
-can use that during your job search to find companies that aren’t like
+I've found it fairly normal to grow bitter of your company prior to
+leaving. I'm not sure if I've left a company that was doing everything
+right and I was happy with (if that were the case I wouldn't have left).
+It's important to figure out *why* you are leaving that company so you
+can use that during your job search to find companies that aren't like
 this. You can use this information to build out questions to ask the
 interviewer to determine if the company would be a better fit for you.
 
 ### Be honest during your exit interview.
 
 You are leaving the company, and in most cases you are talking someone
-from the HR department. While I’ve never had much luck with exit
-interviews changing anything I still think it’s important to be honest
+from the HR department. While I've never had much luck with exit
+interviews changing anything I still think it's important to be honest
 during these. The worst case is nothing you say turns into actionable
 items, however in the best case you could make life easier for the
 co-workers you are leaving behind.
@@ -294,28 +269,15 @@ general information from my future employer. Saving job descriptions can
 be useful as well since you can usually use that to assist you in
 updating your resume. I have a folder in the cloud title *Career*, and
 within that folder I have other folders with the company name on it.
-Throw all of those boring documents in there, chances are you’ll thank
+Throw all of those boring documents in there, chances are you'll thank
 yourself for doing that in the future.
 
-### Don’t jump into the new company after the old one.
+### Don't jump into the new company after the old one.
 
 I made the mistake of leaving a company on a Friday just to start at the
-new one on Monday. Don’t do this, for the last month or more you’ve been
+new one on Monday. Don't do this, for the last month or more you've been
 working full-time and interviewing. You are likely tired and burnt-out
 at this point. Take a week off between jobs so you can relax and feel
 energized when you start at the new place.
 
-*Thanks for taking the time to read through my article. If you found
-something to be not quite right or have other information to add please
-reach out in the comments section below. If you enjoyed this article,
-please click on the clap icon a few times or share it on social media
-(or both). Lastly, I’m starting up a mailing list that is powered by*
-<a href="https://www.activecampaign.com/" class="z nv"
-rel="noopener ugc nofollow" target="_blank"><em>ActiveCampaign</em></a>*,
-if you want to get weekly newsletters then please use the sign-up form
-below.*
-
-<figure class="ny nz oa ob oc nx">
-
-</figure>
-
+If you found this useful, feel free to share it with others who might be at a similar point in their career.

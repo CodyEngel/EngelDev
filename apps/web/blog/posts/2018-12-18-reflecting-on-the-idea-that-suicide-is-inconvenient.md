@@ -1,110 +1,75 @@
 ---
 title: "Reflecting On The Idea That Suicide Is Inconvenient"
 date: 2018-12-18
-description: SHORT DESCRIPTION HERE
-tags: 
-  - REPLACE ME
-  - REPLACE ME TOO
-migrationPending: true
+description: A reflection on how society responds to public suicides, the systemic failures around mental health care, and why empathy matters more than annoyance.
+tags:
+  - mental-health
+  - suicide-prevention
+  - personal
+  - society
 ---
-
-
-# Reflecting On The Idea That Suicide Is Inconvenient
 
 *If you find yourself in need of help, please call the National Suicide
 Prevent Lifeline at* ***1–800–273–8255****, they are open 24/7. They
-also offer*
-<a href="https://suicidepreventionlifeline.org/chat/" class="z nw"
-rel="noopener ugc nofollow" target="_blank"><em>web chat</em></a>*.*
+also offer* [*web chat*](https://suicidepreventionlifeline.org/chat/)*.*
 
-Yesterday a CTA passenger was <a
-href="https://chicago.suntimes.com/news/cta-red-brown-purple-line-halted-person-hit-by-train-belmont/"
-class="z nw" rel="noopener ugc nofollow" target="_blank">fatally struck
-by a southbound train at approximately 7:51am</a>. From what I can tell
-at this time it’s still unsure exactly what happened, the initial
+Yesterday a CTA passenger was [fatally struck
+by a southbound train at approximately 7:51am](https://chicago.suntimes.com/news/cta-red-brown-purple-line-halted-person-hit-by-train-belmont/). From what I can tell
+at this time it's still unsure exactly what happened, the initial
 reporter says the person jumped while others believe he was clipped, but
-it still <a
-href="https://www.reddit.com/r/chicago/comments/a701la/someone_just_jumped_on_the_tracks_at_belmont/"
-class="z nw" rel="noopener ugc nofollow" target="_blank">resulted in a
-thread on Reddit</a> being locked because of pro-suicide trolls.
-Regardless of the ultimate reason for this man’s death, whether it be
+it still [resulted in a
+thread on Reddit](https://www.reddit.com/r/chicago/comments/a701la/someone_just_jumped_on_the_tracks_at_belmont/) being locked because of pro-suicide trolls.
+Regardless of the ultimate reason for this man's death, whether it be
 accident or intentional, people committing suicide via the CTA is not
-uncommon, <a
-href="https://www.reddit.com/r/chicago/comments/a701la/someone_just_jumped_on_the_tracks_at_belmont/"
-class="z nw" rel="noopener ugc nofollow" target="_blank">there are signs
-for the suicide prevention lifeline posted at many of the stops</a>.
-This is also something that happens on the commuter rail lines that go
-from the suburbs into the city. Every-time this has happened I see
-people voice their disgust with how selfish it is that the person
-committing suicide would inconvenience passengers with the massive
-delays that always occur after such events. Truthfully until yesterday I
-was one of those people and so I wanted to take the time to collect my
-thoughts and write about these *inconvenient suicides*.
+uncommon, there are signs for the suicide prevention lifeline posted at
+many of the stops. This is also something that happens on the commuter
+rail lines that go from the suburbs into the city. Every-time this has
+happened I see people voice their disgust with how selfish it is that
+the person committing suicide would inconvenience passengers with the
+massive delays that always occur after such events. Truthfully until
+yesterday I was one of those people and so I wanted to take the time to
+collect my thoughts and write about these *inconvenient suicides*.
 
-<figure class="ny nz oa ob oc nx bd paragraph-image">
-<img src="_media/519203_image1.jpg" loading="eager"
-role="presentation" />
-<figcaption>Photo by <a
-href="https://unsplash.com/photos/rX12B5uX7QM?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-class="z nw" rel="noopener ugc nofollow" target="_blank">Ian
-Espinosa</a> on <a
-href="https://unsplash.com/search/photos/suicide?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText"
-class="z nw" rel="noopener ugc nofollow"
-target="_blank">Unsplash</a></figcaption>
-</figure>
+![Photo by Ian Espinosa on Unsplash](../../assets/images/source/2018-12-18-reflecting-on-the-idea-that-suicide-is-inconvenient-1.jpg "Photo by Ian Espinosa on Unsplash")
 
-## This isn’t a spur of the moment decision.
+## This isn't a spur of the moment decision.
 
 To find yourself in a place where you are ready to take your own life is
 an incredibly one. I went undiagnosed with dysthymia for quite a while
-and I’ve found myself in that dark place once in college. To get to that
+and I've found myself in that dark place once in college. To get to that
 place I went through emotional abuse from a girl I was seeing, and at
 the end of seven months I learned she was seeing another guy the entire
-time and was never honest with me. At that time I wasn’t rational, all I
-could feel was a sense of worthlessness and that feeling that I’m never
+time and was never honest with me. At that time I wasn't rational, all I
+could feel was a sense of worthlessness and that feeling that I'm never
 going to amount to anything. If I could allow myself to be manipulated
 for months on end what does *really say about me*. Of course writing
 about this years later I feel absolutely irrational, why would I
 actually be serious about this? I digress though.
 
-## Get Cody Engel’s stories in your inbox
-
-Join Medium for free to get updates from this writer.
-
-Subscribe
-
-Subscribe
-
 Suicide is not a spur of the moment decision. The person that is going
 through with taking their own life has likely been through months
 mentally draining pain, and likely has suffered through life for years
-to get to that point. They aren’t coming from a rational place of mind,
+to get to that point. They aren't coming from a rational place of mind,
 their goal is to end the suffering they have been through, and if that
 means holding up the CTA for an hour then so-be-it.
 
-## Living in America doesn’t help.
+## Living in America doesn't help.
 
 We have horrendous policies when it comes to self-care in this country.
 The idea that someone can be mentally unhealthy is still incredibly
-taboo, I know first hand as I was commended for
-<a href="/@CodyEngel/reflecting-on-living-with-depression-e6738a65490f"
-class="z nw" rel="noopener" data-discover="true">writing an article
-about the topic</a>. That’s not to say that I don’t appreciate the
-outpouring support I received, it’s just to contrast that I probably
-wouldn’t get as much support for writing about breaking my leg. If you
-show up to work with a cast on your leg then everyone is more than happy
-to help you out, if you are struggling with a mental disease the
-reaction is usually *why is that person so lazy*?
+taboo, I know first hand as I was commended for writing an article about
+the topic. That's not to say that I don't appreciate the outpouring
+support I received, it's just to contrast that I probably wouldn't get
+as much support for writing about breaking my leg. If you show up to
+work with a cast on your leg then everyone is more than happy to help
+you out, if you are struggling with a mental disease the reaction is
+usually *why is that person so lazy*?
 
-Our government policies don’t help either. We struggle as it is to
+Our government policies don't help either. We struggle as it is to
 provide basic healthcare to everyone. I am fortunate to work for a
-company that offers great health benefits and I’m able to see a
+company that offers great health benefits and I'm able to see a
 therapist and psychiatrist at the cost of a \$20 copay. In researching
-the topic briefly <a
-href="https://www.healthinsurance.org/obamacare/how-obamacare-improved-mental-health-coverage/"
-class="z nw" rel="noopener ugc nofollow" target="_blank">mental health
-was a disqualifier for obtaining insurance before the Affordable Care
-Act</a> was passed. So with the recent ruling that it may be
+the topic briefly [mental health was a disqualifier for obtaining insurance before the Affordable Care Act](https://www.healthinsurance.org/obamacare/how-obamacare-improved-mental-health-coverage/) was passed. So with the recent ruling that it may be
 unconstitutional now that the individual mandate was repealed, there is
 the possibility that could be reversed. So not only is it difficult to
 get help for this stuff, it was once a disqualifier for getting health
@@ -113,8 +78,8 @@ insurance and perhaps could be again.
 The country faces incredible challenges when it comes to cyber bullying.
 You can still find dismissive adults that are unable to comprehend that
 before the internet the bullying stopped at school, in 2018 it is
-relentless and never ending. While I haven’t heard reports of teen
-suicides in a while, I wouldn’t be surprised if the increase in mass
+relentless and never ending. While I haven't heard reports of teen
+suicides in a while, I wouldn't be surprised if the increase in mass
 shootings is just overshadowing that. As an aside to that, we are always
 quick to blame mental health as the cause for the shootings (which may
 be true), however I never hear anything actionable about how those
@@ -122,31 +87,15 @@ people could have received help.
 
 ## Suicide is the effect of living in an inconvenient system.
 
-In an attempt to <a
-href="/@CodyEngel/why-im-writing-31-articles-in-31-days-this-december-755ccd9b27e3"
-class="z nw" rel="noopener" data-discover="true">write one article per
-day</a>, I unfortunately have to start summarizing my thoughts and come
-to some conclusion before going to work. The system around us was not
-built with mental health in mind. It is often difficult to receive
-treatment and if you are able to get help there is still a stigma around
-it that you have to overcome. Someone taking their own life isn’t a
-failure on their part, it’s a failure of the larger system that has yet
-to be fixed. If I ever find myself on a CTA train that has to stop
-suddenly and I’m stuck waiting for an hour to get off I’ll no longer
-think *wow, what a selfish person*, I’ll instead take a moment to be
-thankful for all that I have.
+In an attempt to write one article per day, I unfortunately have to
+start summarizing my thoughts and come to some conclusion before going
+to work. The system around us was not built with mental health in mind.
+It is often difficult to receive treatment and if you are able to get
+help there is still a stigma around it that you have to overcome.
+Someone taking their own life isn't a failure on their part, it's a
+failure of the larger system that has yet to be fixed. If I ever find
+myself on a CTA train that has to stop suddenly and I'm stuck waiting
+for an hour to get off I'll no longer think *wow, what a selfish
+person*, I'll instead take a moment to be thankful for all that I have.
 
-*Thanks for taking the time to read through my article. If you found
-something to be not quite right or have other information to add please
-reach out in the comments section below. If you enjoyed this article,
-please click on the clap icon a few times or share it on social media
-(or both). Lastly, I’m starting up a mailing list that is powered by*
-<a href="https://www.activecampaign.com/" class="z nw"
-rel="noopener ugc nofollow" target="_blank"><em>ActiveCampaign</em></a>*,
-if you want to get weekly newsletters then please use the sign-up form
-below.*
-
-<figure class="ny nz oa ob oc nx">
-
-</figure>
-
+If this article resonated with you, feel free to share it with someone who might benefit from reading it.
