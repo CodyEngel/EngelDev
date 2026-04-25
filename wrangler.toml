@@ -1,0 +1,5 @@
+name = "engeldev"
+compatibility_date = "2026-04-24"
+
+[assets]
+directory = "apps/web/_site"

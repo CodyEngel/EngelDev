@@ -33,6 +33,7 @@ export default function(eleventyConfig) {
     // Passthrough copy
     eleventyConfig.addPassthroughCopy("js");
     eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("_headers");
 
     // Collections
     eleventyConfig.addCollection("posts", function(collectionApi) {

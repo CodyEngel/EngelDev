@@ -1,9 +1,6 @@
 name: Deploy Website
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'apps/web/**'
+  workflow_dispatch:
 
 jobs:
   deploy:
