@@ -7,11 +7,11 @@
     <nav id="primary-nav" class="primary-nav" aria-label="Primary">
       <ul class="nav-list" role="list">
         {% for item in navigation %}
-          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          <li><a href="{{ item.url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.label }}</a></li>
         {% endfor %}
       </ul>
       <button class="theme-toggle" aria-label="Toggle dark mode">
-        <span class="theme-toggle-icon"></span>
+        <span class="theme-toggle-icon" aria-hidden="true"></span>
       </button>
     </nav>
   </div>

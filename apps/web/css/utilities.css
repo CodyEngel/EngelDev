@@ -1,4 +1,4 @@
-/* Utility Classes */
+/* ===== Utility Classes ===== */
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -16,6 +16,14 @@
 
 .text-secondary {
   color: var(--color-text-secondary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+.mono {
+  font-family: var(--font-mono);
 }
 
 .text-center {

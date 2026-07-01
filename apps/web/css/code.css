@@ -1,0 +1,79 @@
+/* ===== Syntax Highlighting (self-hosted, mode-aware) =====
+   Replaces the external, always-dark Prism okaidia stylesheet.
+   Colors come from --code-* tokens so code blocks track light/dark mode. */
+
+.prose pre[class*="language-"],
+.prose code[class*="language-"] {
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-sm);
+  line-height: 1.6;
+  tab-size: 2;
+  hyphens: none;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--code-comment);
+  font-style: italic;
+}
+
+.token.punctuation {
+  color: var(--code-punctuation);
+}
+
+.token.property,
+.token.tag,
+.token.symbol,
+.token.deleted {
+  color: var(--code-tag);
+}
+
+.token.boolean,
+.token.number,
+.token.constant,
+.token.class-name {
+  color: var(--code-number);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: var(--code-string);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.token.variable {
+  color: var(--color-text-secondary);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--code-keyword);
+}
+
+.token.function {
+  color: var(--code-function);
+}
+
+.token.regex,
+.token.important {
+  color: var(--code-number);
+}
+
+.token.important,
+.token.bold {
+  font-weight: 600;
+}
+
+.token.italic {
+  font-style: italic;
+}

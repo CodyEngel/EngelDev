@@ -19,11 +19,11 @@ permalink: "/blog/tags/{{ tag | slugify }}/"
 eleventyComputed:
   title: "Posts tagged '{{ tag }}'"
 ---
-<div class="container">
-  <header class="page-header">
-    <h1>Posts tagged "{{ tag }}"</h1>
+<div class="container section">
+  <header class="page-header" data-reveal>
+    <h1>Posts tagged &ldquo;{{ tag }}&rdquo;</h1>
   </header>
-  <div class="stack">
+  <div class="post-list">
     {% for post in collections[tag] %}
       {% render "partials/post-card.liquid", post: post %}
     {% endfor %}
