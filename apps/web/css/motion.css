@@ -1,0 +1,40 @@
+/* ===== Motion Layer =====
+   All motion is gated behind `.js` (added by the inline head script) so that
+   no-JS visitors always see fully-rendered content, and behind
+   prefers-reduced-motion so motion-sensitive visitors get a static page. */
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Scroll reveal: elements rise into place as they enter the viewport.
+     Hidden state only applies when JS is present to remove it. */
+  .js [data-reveal] {
+    opacity: 0;
+    transform: translateY(1.25rem);
+    transition:
+      opacity 0.7s var(--ease),
+      transform 0.7s var(--ease);
+    transition-delay: var(--reveal-delay, 0ms);
+    will-change: opacity, transform;
+  }
+
+  .js [data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Hero entrance: staggered rise on first paint (above the fold, no observer). */
+  .js .hero-animate > * {
+    opacity: 0;
+    transform: translateY(1.15rem);
+    animation: rise-in 0.75s var(--ease) forwards;
+  }
+  .js .hero-animate > *:nth-child(1) { animation-delay: 0.05s; }
+  .js .hero-animate > *:nth-child(2) { animation-delay: 0.16s; }
+  .js .hero-animate > *:nth-child(3) { animation-delay: 0.28s; }
+
+  @keyframes rise-in {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

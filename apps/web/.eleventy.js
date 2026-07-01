@@ -40,12 +40,18 @@ export default function(eleventyConfig) {
         return collectionApi.getFilteredByTag("post").sort((a, b) => b.date - a.date);
     });
 
+    // Placeholder sample projects are hidden until real projects are added.
+    const isRealProject = (item) => !item.fileSlug.startsWith("sample-");
+
     eleventyConfig.addCollection("projects", function(collectionApi) {
-        return collectionApi.getFilteredByTag("project").sort((a, b) => b.date - a.date);
+        return collectionApi.getFilteredByTag("project")
+            .filter(isRealProject)
+            .sort((a, b) => b.date - a.date);
     });
 
     eleventyConfig.addCollection("featuredProjects", function(collectionApi) {
         return collectionApi.getFilteredByTag("project")
+            .filter(isRealProject)
             .filter(item => item.data.featured)
             .sort((a, b) => b.date - a.date);
     });
@@ -78,6 +84,14 @@ export default function(eleventyConfig) {
         const month = String(d.getUTCMonth() + 1).padStart(2, "0");
         const day = String(d.getUTCDate()).padStart(2, "0");
         return `${year}-${month}-${day}`;
+    });
+
+    eleventyConfig.addFilter("getYear", (dateObj) => {
+        return new Date(dateObj).getUTCFullYear().toString();
+    });
+
+    eleventyConfig.addFilter("rfc3339", (dateObj) => {
+        return new Date(dateObj).toISOString();
     });
 
     eleventyConfig.addFilter("excerpt", (content, length) => {

@@ -4,14 +4,31 @@ title: Blog
 tags: []
 eleventyExcludeFromCollections: true
 permalink: /blog/
+description: "Writing on software engineering, Android, Kotlin, and the occasional detour into everything else."
 ---
-<div class="container">
-  <header class="page-header">
+<div class="container section">
+  <header class="page-header" data-reveal>
     <h1>Blog</h1>
+    <p class="lede">{{ collections.posts.size }} posts on software engineering and whatever else I was thinking about.</p>
   </header>
-  <div class="stack">
-    {% for post in collections.posts %}
-      {% render "partials/post-card.liquid", post: post %}
-    {% endfor %}
-  </div>
+
+  {% assign currentYear = "" %}
+  {% for post in collections.posts %}
+    {% assign postYear = post.date | getYear %}
+    {% if postYear != currentYear %}
+      {% unless forloop.first %}
+        </div>
+      </section>
+      {% endunless %}
+      <section class="year-group" data-reveal>
+        <h2 class="year-heading">{{ postYear }}</h2>
+        <div class="post-list">
+      {% assign currentYear = postYear %}
+    {% endif %}
+    {% render "partials/post-card.liquid", post: post %}
+  {% endfor %}
+  {% if collections.posts.size > 0 %}
+        </div>
+      </section>
+  {% endif %}
 </div>

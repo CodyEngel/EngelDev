@@ -1,27 +1,31 @@
 ---
 layout: base.liquid
-title: Home
 ---
 {% render "partials/hero.liquid", site: site %}
 
 {% if collections.featuredProjects != empty %}
-<section class="container">
-  <h2 class="section-heading">Projects</h2>
+<section class="section container">
+  <div class="section-head" data-reveal>
+    <h2>Projects</h2>
+    <a class="section-link" href="/projects/">All projects</a>
+  </div>
   <div class="grid">
     {% for project in collections.featuredProjects %}
       {% render "partials/project-card.liquid", project: project %}
     {% endfor %}
   </div>
-  <p class="view-all"><a href="/projects/">View all projects &rarr;</a></p>
 </section>
 {% endif %}
 
-<section class="container">
-  <h2 class="section-heading">Recent Posts</h2>
-  <div class="stack">
+<section class="section container">
+  <div class="section-head" data-reveal>
+    <h2>Recent posts</h2>
+    <a class="section-link" href="/blog/">All posts</a>
+  </div>
+  <div class="post-list">
     {% for post in collections.posts limit: 6 %}
-      {% render "partials/post-card.liquid", post: post %}
+      {% assign revealDelay = forloop.index0 | times: 70 %}
+      {% render "partials/post-card.liquid", post: post, lead: forloop.first, delay: revealDelay %}
     {% endfor %}
   </div>
-  <p class="view-all"><a href="/blog/">View all posts &rarr;</a></p>
 </section>

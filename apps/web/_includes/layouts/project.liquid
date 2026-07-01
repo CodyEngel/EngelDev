@@ -1,7 +1,7 @@
 ---
 layout: base.liquid
 ---
-<article class="container project-detail">
+<article class="container section project-detail">
   {% if coverImage %}
     <div class="project-cover">
       <img src="{{ coverImage }}" alt="{{ title }}" loading="lazy" decoding="async">
@@ -11,7 +11,7 @@ layout: base.liquid
     <h1>{{ title }}</h1>
     <p class="project-description">{{ description }}</p>
     {% if projectUrl %}
-      <a href="{{ projectUrl }}" class="button" target="_blank" rel="noopener">View Project</a>
+      <a href="{{ projectUrl }}" class="button" target="_blank" rel="noopener">View project</a>
     {% endif %}
     {% if tags.size > 0 %}
       {% render "partials/tag-list.liquid", tags: tags %}

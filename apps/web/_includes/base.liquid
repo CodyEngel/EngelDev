@@ -1,34 +1,60 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+
     <title>{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}</title>
-    {% if description %}
-        <meta name="description" content="{{ description }}">{% endif %}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet"/>
+    {% assign metaDescription = description | default: site.description %}
+    <meta name="description" content="{{ metaDescription }}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+    {% assign ogType = "website" %}
+    {% if tags contains "post" %}{% assign ogType = "article" %}{% endif %}
+    <meta property="og:type" content="{{ ogType }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="og:title" content="{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
+    <meta property="og:description" content="{{ metaDescription }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{% if title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}{% endif %}">
+    <meta name="twitter:description" content="{{ metaDescription }}">
+
+    <meta name="theme-color" content="#f5f3ef" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1a1714" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+    <link rel="alternate" type="application/atom+xml" href="/feed.xml" title="{{ site.name }}">
+
+    <link rel="preload" href="/assets/fonts/geist-sans.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/assets/fonts/geist-mono.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/main.css?v={{ buildTime }}">
+
     <script>
         (function () {
+            var el = document.documentElement;
+            el.classList.add('js');
             var saved = localStorage.getItem('theme');
             if (saved) {
-                document.documentElement.setAttribute('data-theme', saved);
+                el.setAttribute('data-theme', saved);
             } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                document.documentElement.setAttribute('data-theme', 'dark');
+                el.setAttribute('data-theme', 'dark');
+            } else {
+                el.setAttribute('data-theme', 'light');
             }
         })();
     </script>
 </head>
 <body>
-{% render "partials/header.liquid", navigation: navigation, site: site %}
+<a href="#main-content" class="skip-link">Skip to content</a>
+{% render "partials/header.liquid", navigation: navigation, site: site, page: page %}
 <main id="main-content">
     {{ content }}
 </main>
 {% render "partials/footer.liquid", social: social, site: site %}
 <script src="/js/theme-toggle.js"></script>
 <script src="/js/mobile-nav.js"></script>
+<script src="/js/reveal.js"></script>
 </body>
 </html>

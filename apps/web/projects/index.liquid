@@ -4,14 +4,19 @@ title: Projects
 permalink: /projects/
 tags: []
 eleventyExcludeFromCollections: true
+description: "Projects and selected work by Cody Engel."
 ---
-<div class="container">
-  <header class="page-header">
+<div class="container section">
+  <header class="page-header" data-reveal>
     <h1>Projects</h1>
   </header>
-  <div class="grid">
-    {% for project in collections.projects %}
-      {% render "partials/project-card.liquid", project: project %}
-    {% endfor %}
-  </div>
+  {% if collections.projects != empty %}
+    <div class="grid">
+      {% for project in collections.projects %}
+        {% render "partials/project-card.liquid", project: project %}
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="empty-state" data-reveal>Nothing here yet. Project write-ups are on the way. In the meantime, the <a href="/blog/">blog</a> has plenty to read.</p>
+  {% endif %}
 </div>

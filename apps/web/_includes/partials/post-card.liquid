@@ -1,9 +1,11 @@
-<article class="post-card">
+<article class="post-item{% if lead %} post-item--lead{% endif %}" data-reveal{% if delay %} style="--reveal-delay: {{ delay }}ms"{% endif %}>
   <a href="{{ post.url }}">
-    <time datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
-    <h3 class="post-card-title">{{ post.data.title }}</h3>
-    {% if post.data.description %}
-      <p class="post-card-excerpt">{{ post.data.description }}</p>
-    {% endif %}
+    <time class="post-item-date" datetime="{{ post.date | isoDate }}">{{ post.date | readableDate }}</time>
+    <div class="post-item-body">
+      <h3 class="post-item-title">{{ post.data.title }}</h3>
+      {% if post.data.description %}
+        <p class="post-item-desc">{{ post.data.description }}</p>
+      {% endif %}
+    </div>
   </a>
 </article>
