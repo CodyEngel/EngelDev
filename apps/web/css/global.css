@@ -45,8 +45,8 @@ a:hover {
 
 /* ===== Prose: rendered markdown content ===== */
 
+/* Prose fills its container; the container class sets the reading width. */
 .prose {
-  max-width: var(--container-narrow);
   font-size: var(--font-size-md);
   color: var(--color-text);
 }
