@@ -16,11 +16,12 @@ export default function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
         extensions: 'html',
         formats: ['webp', 'gif', 'jpeg'],
-        widths: [320, 570, 880, 1024, 2048],
+        widths: [320, 570, 880, 1024, 1140, 2048],
         defaultAttributes: {
             loading: 'lazy',
             decoding: 'async',
-            sizes: '90vw',
+            // Content column is the .container width (1140) minus its inline padding.
+            sizes: '(min-width: 1140px) 1080px, 90vw',
         },
         sharpOptions: {
             animated: true,

@@ -467,7 +467,6 @@
 .lede {
   font-size: var(--font-size-md);
   color: var(--color-text-secondary);
-  max-width: var(--container-narrow);
   line-height: 1.5;
 }
 
@@ -526,7 +525,6 @@
 .empty-state {
   padding: var(--space-2xl) 0;
   color: var(--color-text-secondary);
-  max-width: var(--container-narrow);
 }
 
 /* ===== View-all link ===== */
